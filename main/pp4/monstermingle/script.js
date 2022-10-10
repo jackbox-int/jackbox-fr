@@ -16886,10 +16886,10 @@ const HC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
+                wait: "Asseyez-vous et détendez-vous !",
+                vip_waiting: "En attente de tous les joueurs pour commencer",
+                vip_canStart: "Appuyez sur ce bouton quand tout le monde a rejoint",
+                vip_cancel: "Appuyez sur ce bouton pour annuler le lancement du jeu",
                 vip_postgame: "What would you like to do now?",
                 vip_episodes_menu: "Episodes Menu",
                 vip_episodes_unload: "Unload Episode",
@@ -16900,11 +16900,11 @@ const HC = `<div id="controller" class="state-controller controller-content">
                 vip_episodes_back: "Back",
                 vip_episodes_submit: "SUBMIT",
                 vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
+                button_start: "Tout le monde est là",
+                button_cancel: "Annuler",
                 button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
+                button_sameplayers: "Mêmes joueurs",
+                button_newplayers: "Nouveaux joueurs",
                 prompt_entername: "Enter your name",
                 prompt_choosecharacter: "Select your character",
                 button_censorOptions: "Censor Options",
@@ -21469,19 +21469,19 @@ const zx = ht.View.extend({
     }),
     nE = `<div class="titleBar">
     <div class="playerName">playername</div>
-    <div class="playerInDisguise">(in disguise)</div>
+    <div class="playerInDisguise">(déguisé)</div>
 </div>
 <div class="profileContent">
     <div class="closeButton"></div>
-    <div class="blockedMessage">You are not receiving messages from Kimberly</div>
+    <div class="blockedMessage">Vous ne recevez pas de message de Kimberly</div>
     <div class="monsterIcon chatAvatars"><div class="blockedIcon"></div></div>
     <div class="monsterClass"><span class="monsterClassIntro">monsterClassIntro</span><br><span class="monsterClassName">monsterClassName</span></div>
     <div class="monsterPower">
-        <span class="monsterPowerIntro">Powers:</span>
+        <span class="monsterPowerIntro">Pouvoirs :</span>
         <p class="monsterPowerDescription">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laureet dolore magna aliquam</p>
     </div>
-    <button class='startChattingButton btn'>Start Chatting!</button>
-    <button class="blockButton btn">Block</button>
+    <button class='startChattingButton btn'>Fermer</button>
+    <button class="blockButton btn">Bloquer</button>
 </div>`,
     yl = ht.View.extend({
         className: "monsterProfile",
@@ -21505,15 +21505,15 @@ const zx = ht.View.extend({
             ".blockedMessage": {
                 observe: "blocked",
                 onGet(t) {
-                    return t === !0 ? `You are not receiving messages from ${this.model.attributes.name}` : ""
+                    return t === !0 ? `Vous ne recevez pas de messages de ${this.model.attributes.name}` : ""
                 }
             },
             ".monsterClassIntro": {
                 observe: ["self", "monster"],
                 onGet(t) {
                     const e = "aeiouAEIOU";
-                    let n = "a";
-                    return e.indexOf(t[1].name[0]) !== -1 && (n = "an"), t[0] === !0 ? `You are ${n}` : `This player is ${n}`
+                    let n = "";
+                    return e.indexOf(t[1].name[0]) !== -1 && (n = ""), t[0] === !0 ? `Vous êtes ${n}` : `Ce joueur est ${n}`
                 }
             },
             ".monsterClassName": {
@@ -21831,7 +21831,7 @@ const zx = ht.View.extend({
         },
         async update() {
             const t = this;
-            if (this.player = this.model.get("player"), this.chat = this.model.get("chat") || {}, this.model.get("chosenDateUserId") && (this.chat.mode = "browse"), this.player && (this.summaryTopComponent.model.set("player", this.player), this.chat.mode === "chat" ? (this.summaryTopComponent.model.set("mode", "TIME TO CHAT"), this.summaryTopComponent.model.set("description", "Click on a player to message them")) : this.chat.mode === "date" ? (this.summaryTopComponent.model.set("mode", "TIME TO CHOOSE"), this.summaryTopComponent.model.set("description", "Who do you want to date?")) : this.chat.mode === "browse" && this.model.get("chosenDateUserId") !== null && (this.summaryTopComponent.model.set("mode", "DATE CHOSEN"), this.summaryTopComponent.model.set("description", "Wait for others to choose"))), this.chat) {
+            if (this.player = this.model.get("player"), this.chat = this.model.get("chat") || {}, this.model.get("chosenDateUserId") && (this.chat.mode = "browse"), this.player && (this.summaryTopComponent.model.set("player", this.player), this.chat.mode === "chat" ? (this.summaryTopComponent.model.set("mode", "TIME TO CHAT"), this.summaryTopComponent.model.set("description", "Cliquez sur un joueur pour lui envoyer un message")) : this.chat.mode === "date" ? (this.summaryTopComponent.model.set("mode", "TIME TO CHOOSE"), this.summaryTopComponent.model.set("description", "Avec qui voulez-vous sortir ?")) : this.chat.mode === "browse" && this.model.get("chosenDateUserId") !== null && (this.summaryTopComponent.model.set("mode", "DATE CHOSEN"), this.summaryTopComponent.model.set("description", "En attente des autres pour continuer"))), this.chat) {
                 let e;
                 if (this.client.isRole("player")) {
                     if (e = !1, this.model.changed.alerts && (this.showAlerts(this.model.get("alerts")), kt.vibrate()), this.oldUnread < this.chat.unread && (kt.vibrate(), this.playSound()), this.chatDetailComponent.model.set("unread", this.chat.unread), this.oldUnread = this.chat.unread, this.detailContactId !== null) {
@@ -21843,7 +21843,7 @@ const zx = ht.View.extend({
                             i && i.$el.scrollTop(i.$el[0].scrollHeight)
                         }
                     }
-                    this.summaryCollection.set(this.chat.conversations), this.chat.mode === "chat" ? (this.bottomComponent.model.set("text", `You have ${this.chat.messagesAvailableToSend}${this.chat.messagesAvailableToSend===1?" message ":" messages "} left to send`), this.bottomComponent.model.set("background", this.player.color.medium)) : this.chat.mode === "date" ? this.bottomComponent.model.set("text", "Click DATE button on this screen, or within a conversation if still reading.") : this.bottomComponent.model.set("text", ""), this.chat.mode && this.mode !== this.chat.mode && (!this.detailContactId && this.getRegion("summary") && this.getRegion("summary").currentView === this.summaryList ? this.showChatSummary() : this.detailContactId && this.showChatDetail(this.detailContactId)), this.mode = this.chat.mode, this.chat.showProfile && this.showPlayerProfile(this.player, !0)
+                    this.summaryCollection.set(this.chat.conversations), this.chat.mode === "chat" ? (this.bottomComponent.model.set("text", `Vous avez ${this.chat.messagesAvailableToSend}${this.chat.messagesAvailableToSend===1?" message ":" messages "} restant à envoyer`), this.bottomComponent.model.set("background", this.player.color.medium)) : this.chat.mode === "date" ? this.bottomComponent.model.set("text", "Cliquez sur le bouton DATE sur cet écran, ou dans une conversation.") : this.bottomComponent.model.set("text", ""), this.chat.mode && this.mode !== this.chat.mode && (!this.detailContactId && this.getRegion("summary") && this.getRegion("summary").currentView === this.summaryList ? this.showChatSummary() : this.detailContactId && this.showChatDetail(this.detailContactId)), this.mode = this.chat.mode, this.chat.showProfile && this.showPlayerProfile(this.player, !0)
                 } else if (this.client.isRole("audience")) {
                     if (this.model.changed.alerts && this.showAlerts(this.model.get("alerts")), this.summaryTopComponent.model.set("player", this.player), this.summaryTopComponent.model.set("mode", "AUDIENCE"), this.summaryTopComponent.model.set("description", "Vote what to say next"), e = this.chat && this.chat.history.length > this.chatDetailCollection.length, this.chat && this.chat.history) {
                         this.allContacts = Be.union([this.player], this.chat.contacts);
