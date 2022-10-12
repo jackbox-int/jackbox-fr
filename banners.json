@@ -1,13 +1,10 @@
 {
     "bannerAds": [
         {
-            "tags": [
-                "locale-fr"
-            ],
             "start": "2022-01-01",
             "text": "Rejoignez-nous !",
             "src": "https://media.discordapp.net/attachments/540120469391671308/1029102385907372132/unknown.png",
-            "href": "https://discord.com"
+            "href": "https://discord.gg/XhwPfUrCEx"
         },
         {
             "tags": [
