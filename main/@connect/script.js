@@ -24474,7 +24474,7 @@ from your past games list.`,
         Cee = {
             CAMERA: "[b]ATTENTION\xA0:[/b] Nous ne d\xE9tectons aucune cam\xE9ra, mais vous pouvez jouer sans afficher votre photo. Si vous pensez qu'il s'agit d'une erreur, essayez de rejoindre en utilisant un autre navigateur.",
             STYLE: "[b]ATTENTION\xA0:[/b] Votre navigateur semble obsol\xE8te. Vous risquez de rencontrer des probl\xE8mes d'affichage avec ce jeu.",
-            TOS: "En cliquant sur {submit}, vous acceptez nos [tos]Conditions de service[/tos]."
+            TOS: "En cliquant sur {submit}, vous acceptez les [tos]Conditions de service[/tos] de Jackbox."
         },
         Aee = {
             ERROR: bee,
