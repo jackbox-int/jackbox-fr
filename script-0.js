@@ -1078,7 +1078,7 @@ var ow = Qo((uw, Fo) => {
             return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(e) {
-            return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return e = e.replace("\u2026", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -4837,8 +4837,7 @@ var ow = Qo((uw, Fo) => {
             isPublic: !0,
             directory: "pp8/apply-yourself",
             categoryId: "JobGameGame",
-            features: ["moderation"],
-            hasPreviews: !0
+            features: ["moderation", "previews"]
         }, {
             name: "Drawful Animate",
             tag: "drawful-animate",
@@ -4929,7 +4928,7 @@ var ow = Qo((uw, Fo) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/lineup",
-            features: ["kicking"],
+            features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }],
         Ki = t => jg.find(e => e.tag === t || e.categoryId === t);
@@ -10540,23 +10539,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "8ee62445bb9e7d61167c20db61a117ffd6a43fd6",
-            lastUpdated: 1665095156850,
-            version: "5.38.0",
+            sha: "d855a90317bd6104e14b2c3d15c897a9ff02448b",
+            lastUpdated: 1666236664435,
+            version: "5.50.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "8ee62445bb9e7d61167c20db61a117ffd6a43fd6",
-                lastUpdated: 1665095156850,
-                version: "5.38.0",
+                sha: "d855a90317bd6104e14b2c3d15c897a9ff02448b",
+                lastUpdated: 1666236664435,
+                version: "5.50.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.32.0"
+                        version: "5.50.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10574,7 +10573,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@moderator",
-                        version: "5.13.0"
+                        version: "5.42.0"
                     },
                     "awshirt-tjsp": {
                         file: "script.js",
@@ -10862,31 +10861,31 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/antique-freak",
-                        version: "5.35.0"
+                        version: "5.47.0"
                     },
                     fourbage: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.37.0"
+                        version: "5.45.0"
                     },
                     htmf: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.33.0"
+                        version: "5.46.0"
                     },
                     lineup: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.38.0"
+                        version: "5.49.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.0.0"
+                        version: "5.44.0"
                     }
                 }
             }
@@ -10913,4 +10912,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=f020853e.js.map
+//# sourceMappingURL=fab26f4c.js.map
