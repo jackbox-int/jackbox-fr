@@ -31910,7 +31910,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             key: 0,
             class: "name-instructions",
             style: Jn(e.instructionStyles)
-        }, " Drag your name to the card below ", 4))]), V("div", {
+        }, " Déplacez votre nom sur la carte en-dessous ", 4))]), V("div", {
             class: ke(e.names.length ? "paper-container slide-down" : "paper-container")
         }, [V("div", xoe, [Me(c, {
             modelValue: e.names,

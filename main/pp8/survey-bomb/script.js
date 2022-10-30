@@ -24993,60 +24993,60 @@ ${t}`
         },
         Fte = {
             INSTRUCTION: {
-                ORDERED: "Choose the door you think is {rank}",
-                UNORDERED: "Choose all {amount} correct doors"
+                ORDERED: "Choisissez la porte qui est classée {rank}",
+                UNORDERED: "Choisissez {amount} portes correctes"
             },
-            REMAINING: "Remaining Choices: {remaining}"
+            REMAINING: "Choix restants : {remaining}"
         },
         Bte = {
-            CHOOSE_ONE: "Choose a door",
-            CHOOSE_THIS: "Choose this door"
+            CHOOSE_ONE: "Choisissez une porte",
+            CHOOSE_THIS: "Choissez cette porte"
         },
         jte = {
-            FILTER_ERROR: "That\u2019s not allowed, enter something else!",
+            FILTER_ERROR: "Ce n\u2019est pas autorisé, entrez quelque chose d'autre !",
             INSTRUCTION: {
-                AVATAR: "Pick your avatar",
-                NAME_TEAM: "Suggest a team name",
-                RANK_TEAM: "Rank your favorite team names"
+                AVATAR: "Choisissez votre avatar",
+                NAME_TEAM: "Choisissez un nom d'équipe",
+                RANK_TEAM: "Classez vos noms d'équipes favoris"
             }
         },
-        Gte = "No torches",
+        Gte = "Aucune torches",
         Wte = {
-            CONFIRM: "Yeah, yeah, I got it",
+            CONFIRM: "Oui oui, j'ai compris",
             SUBTEXT: {
-                ATTENTION: "[b]YOU MUST HAVE THE AUDIENCE ON TO PLAY![/b]",
-                BEST: "[b]BEST:[/b] Passwording the game and sharing the password with your desired team",
-                GOOD: "[b]ALMOST AS GOOD:[/b] Hiding the room code and setting a max player limit",
-                RECOMMEND: "We recommend the following settings to help create your desired team and audience.",
-                RESTART: "So, if you haven\u2019t done that, maybe restart the game?"
+                ATTENTION: "[b]VOUS DEVEZ AVOIR UNE AUDIENCE POUR JOUER ![/b]",
+                BEST: "[b]LE MIEUX :[/b] Ajoutez un mot de passe à votre partie et partagez le mot de passe à votre équipe",
+                GOOD: "[b]PRESQUE AUSSI BIEN :[/b] Cacher le code du salon et limiter le nombre de joueur",
+                RECOMMEND: "Nous recommandons les parametres suivants pour choisir votre équipe et votre audience.",
+                RESTART: "Donc, si vous n\u2019avez pas fait ça, peut-etre devriez-vous redémarrer la partie ?"
             },
-            TEXT: "Welcome to Streamer Mode!"
+            TEXT: "Bienvenue dans le mode Streamer !"
         },
         Kte = {
-            INSTRUCTION: "Remember your choices",
-            PICK_MORE: "Pick {amount} more"
+            INSTRUCTION: "Souvenez-vous de vos choix !",
+            PICK_MORE: "Choisissez-en encore {amount}"
         },
-        Hte = "Switch teams",
+        Hte = "Changer d'équipe",
         Vte = "VS",
         qte = {
             FINAL_CHANCE: {
-                BOTH: "If either team gets the next choice right, the game is over!",
-                CURRENT: "If their team gets their next choice right, the game is over!",
-                HEADER: "Elimination Moment",
-                RIVAL: "If your team gets your next choice right, the game is over!"
+                BOTH: "Si une des équipes répond bien, la partie est terminée !",
+                CURRENT: "Si leur équipe répond bien, la partie est terminée !",
+                HEADER: "Elimination possible",
+                RIVAL: "Si votre équipe répond bien, la partie est terminée !"
             },
             LOSE: {
-                HEADER: "You\u2019re Trapped",
-                TEXT: ["Don\u2019t worry, apparently you were tasty.", "At least the other team is happy.", "Learn more about your friends next time.", "Still, you learned a lot about each other.", "It is pitch black. You are likely to be eaten by a grue.", "Even worse, you\u2019re damp.", "Theivery doesn\u2019t pay!", "It\u2019s okay, Laverne will keep you company.", "Enjoy the musty air.", "At least your team name was cool."]
+                HEADER: "Vous etes piégé",
+                TEXT: ["Ne vous inquiétez pas, apparemment vous étiez délicieux !", "Au moins l'autre équipe est contente.", "Choisissez mieux vos amis la prochaine fois.", "Au moins... Vous avez appris beaucoup de choses sur d'autres joueurs.", "Tout est noir... Vous sentez des araignées roder autour de vous.", "Vous courrez pour ne pas vous faire croquer en premier.", "Voler n\u2019apporte rien dans la vie!", "Tout va bien, Laverne va vous tenir compagnie.", "J'espère que vous appréciez l'air dans cette grotte.", "Au moins votre nom d'équipe était cool."]
             },
-            SKIP_TUTORIALS: "Skip Tutorials",
+            SKIP_TUTORIALS: "Passer les tutoriels",
             UP_NEXT: {
-                HEADER: "You\u2019re Up Next",
-                TEXT: ["Get ready! You\u2019re choosing next.", "Pay attention because you\u2019re picking the next door.", "After this choice, it\u2019s your turn\u2026 so hope they fail!"]
+                HEADER: "Vous jouez juste après",
+                TEXT: ["Soyez pret ! C'est votre tour juste après.", "Soyez attentifs car vous choisissez la prochaine porte.", "Après ce choix, c'est votre tour... donc espérez qu'ils perdent ce tour"]
             },
             WIN: {
-                HEADER: "You Escaped",
-                TEXT: ["Congratulations on a job well done!", "Teamwork made this dream work.", "Don\u2019t spend all that gold you stole earlier in one place.", "Enjoy the fresh air.", "Don\u2019t forget to rate your stay!", "I\u2019m sure the other team is just fine.", "You picked your friends\u2019 knows!", "Looking forward to your next visit.", "The real treasure was the friends we lost to the depths of this mine.", "Everyone is proud of you."]
+                HEADER: "Vous vous etes échappés",
+                TEXT: ["Bravo, c'est très bien joué !", "C'était du beau travail d'équipe !", "Ne dépensez pas tout l'or que vous avez volés en un seul endroit.", "Appréciez l'air frais.", "N\u2019oubliez pas de laisser une note sur cet endroit!", "Je suis sure que l'autre équipe va bien...", "Vous avez bien choisi vos amis !", "En espérant vous revoir très bientot.", "La vraie récompense sont les amis perdus au fond de cette caverne.", "Tout le monde est fier de vous."]
             }
         },
         Yte = {
