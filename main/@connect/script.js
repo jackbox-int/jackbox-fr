@@ -24381,93 +24381,93 @@ ${t}`
         }
     });
     const gee = {
-            LABEL: "BRANCH",
-            REFRESH_REQUIRED: "Refresh Required",
-            PREFERRED: "PREFERRED BRANCH",
-            SELECT: "Select a Branch",
-            WAITING: "Waiting for Room"
+            LABEL: "SECTION",
+            REFRESH_REQUIRED: "Actualisation requise",
+            PREFERRED: "SECTION PR\xC9F\xC9R\xC9E",
+            SELECT: "Choisissez une section",
+            WAITING: "En attente de la salle"
         },
         mee = {
-            UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-            ROOM_IS_FULL: "The game is full",
-            ROOM_NOT_FOUND: "Room not found",
-            AUDIENCE_IS_FULL: "The audience is full",
-            UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
-            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-            KICKED: "You cannot join because you have been kicked by a moderator",
-            REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
-            ROOM_IS_LOCKED: "Game is locked",
-            INCORRECT_PASSWORD: "Incorrect password",
-            GENERIC: "Error joining this game",
-            FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
+            UNSUPPORTED_BROWSER: "Le jeu n'est pas compatible avec votre navigateur. Allez sur '?' ou sur AIDE pour afficher une liste des navigateurs compatibles.",
+            ROOM_IS_FULL: "La salle est pleine.",
+            ROOM_NOT_FOUND: "Salle introuvable",
+            AUDIENCE_IS_FULL: "Il n'y a plus de place dans le public.",
+            UNABLE_TO_CONNECT: "Impossible de se connecter au serveur de Jackbox Games. Les bloqueurs de publicit\xE9 ou les modules de protection de la confidentialit\xE9 sont g\xE9n\xE9ralement \xE0 l'origine de ce probl\xE8me.",
+            UNABLE_TO_PRELOAD: "Impossible de pr\xE9charger ce pack de jeux",
+            KICKED: "Vous ne pouvez pas rejoindre la partie, parce que vous avez \xE9t\xE9 \xE9ject\xE9(e) par un mod\xE9rateur.",
+            REQUIRES_TWITCH_LOGIN: "Ce jeu n\xE9cessite une connexion Twitch.",
+            ROOM_IS_LOCKED: "La salle est ferm\xE9e.",
+            INCORRECT_PASSWORD: "Mot de passe incorrect",
+            GENERIC: "Erreur en rejoignant la salle",
+            FILTER_NAME: "Le filtre anti-grossi\xE8ret\xE9 est activ\xE9 pour cette partie. Veuillez choisir un autre nom."
         },
         vee = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "ENTER YOUR NAME",
-            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-            PASSWORD_REQUIRED_TITLE: "Password required",
-            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-            ROOM_CODE: "ROOM CODE",
-            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+            NAME: "NOM",
+            NAME_PLACEHOLDER: "INDIQUEZ VOTRE NOM",
+            PASSWORD_PLACEHOLDER: "TAPEZ UN MOT DE PASSE \xC0 5\xA0CHIFFRES",
+            PASSWORD_REQUIRED_TITLE: "Mot de passe requis",
+            PASSWORD_REQUIRED_BODY: "Indiquez le mot de passe ou rejoignez la salle en tant que spectateur.",
+            PASSWORD_JOIN_AS_PLAYER: "Rejoindre en tant que joueur",
+            PASSWORD_JOIN_AS_AUDIENCE: "Rejoindre en tant que spectateur",
+            ROOM_CODE: "CODE DE SALLE",
+            ROOM_CODE_PLACEHOLDER: "TAPEZ LE CODE \xC0 4\xA0LETTRES"
         },
-        Eee = "Link to Jackbox Games Homepage",
+        Eee = "Lien vers la page d'accueil de Jackbox Games",
         _ee = {
-            APPEARANCE: "APPEARANCE",
-            DARK: "dark",
-            HELP: "HELP",
+            APPEARANCE: "APPARENCE",
+            DARK: "sombre",
+            HELP: "AIDE",
             TWITCH: "TWITCH",
-            LIGHT: "light",
-            LOGOUT: "LOGOUT",
-            MERCH: "MERCH",
-            PAST_GAMES: "PAST GAMES",
-            MAILING_LIST: "MAILING LIST",
-            MODERATOR: "MODERATOR"
+            LIGHT: "clair",
+            LOGOUT: "D\xC9CONNEXION",
+            MERCH: "PRODUITS D\xC9RIV\xC9S",
+            PAST_GAMES: "ANCIENNES PARTIES",
+            MAILING_LIST: "LISTE DE DIFFUSION",
+            MODERATOR: "MOD\xC9RATEUR"
         },
         yee = {
             CALL_TO_ACTION: {
-                SHOP: "VIEW GAME & SHOP",
-                VIEW: "VIEW THIS GAME"
+                SHOP: "VOIR LE JEU ET LA BOUTIQUE",
+                VIEW: "VOIR CETTE PARTIE"
             },
-            NEW: "NEW",
-            PLAYED_ON: "PLAYED ON",
+            NEW: "NOUVEAU",
+            PLAYED_ON: "JOU\xC9E LE",
             REMOVE: {
-                CONFIRM: "Are you sure?",
-                DESCRIPTION: `This will permanently remove this game
-from your past games list.`,
-                MANAGE: "Remove Game?",
-                TITLE: "Are You Sure?"
+                CONFIRM: "\xCAtes-vous s\xFBr\xA0?",
+                DESCRIPTION: `Cela supprimera d\xE9finitivement cette partie
+de votre liste d'anciennes parties.`,
+                MANAGE: "Supprimer la partie\xA0?",
+                TITLE: "\xCAtes-vous s\xFBr\xA0?"
             }
         },
         bee = {
-            EMPTY: "No Past Games Yet",
-            MANAGE: "MANAGE",
-            TITLE: "YOUR PAST GAMES"
+            EMPTY: "Aucune ancienne partie",
+            MANAGE: "G\xC9RER",
+            TITLE: "VOS ANCIENNES PARTIES"
         },
         Tee = {
-            TITLE: "RECENT GAMES",
+            TITLE: "PARTIES R\xC9CENTES",
             VIEW_ALL: {
-                BUTTON: "VIEW ALL",
-                LINK: "VIEW ALL PAST GAMES"
+                BUTTON: "VOIR TOUT",
+                LINK: "VOIR TOUTES LES ANCIENNES PARTIES"
             }
         },
         See = {
-            GAME_FULL: "Game is full",
-            GAME_STARTED: "Game has started",
-            ROOM_NOT_FOUND: "Room not found"
+            GAME_FULL: "La salle est pleine.",
+            GAME_STARTED: "La partie a commenc\xE9.",
+            ROOM_NOT_FOUND: "Salle introuvable"
         },
         Oee = {
-            GAME_FULL: "GAME IS FULL",
-            GAME_STARTED: "GAME HAS STARTED",
-            JOIN_AUDIENCE: "JOIN AUDIENCE",
-            RECONNECT: "RECONNECT",
-            TWITCH_LOGIN: "LOGIN WITH TWITCH"
+            GAME_FULL: "LA SALLE EST PLEINE.",
+            GAME_STARTED: "LA PARTIE A COMMENC\xC9.",
+            JOIN_AUDIENCE: "REJOINDRE EN TANT QUE SPECTATEUR",
+            RECONNECT: "SE RECONNECTER",
+            TWITCH_LOGIN: "SE CONNECTER AVEC TWITCH"
         },
         Aee = {
-            CAMERA: "[b]HEADS UP:[/b] We\u2019re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
-            STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-            TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
+            CAMERA: "[b]ATTENTION\xA0:[/b] Nous ne d\xE9tectons aucune cam\xE9ra, mais vous pouvez jouer sans afficher votre photo. Si vous pensez qu'il s'agit d'une erreur, essayez de rejoindre en utilisant un autre navigateur.",
+            STYLE: "[b]ATTENTION\xA0:[/b] Votre navigateur semble obsol\xE8te. Vous risquez de rencontrer des probl\xE8mes d'affichage avec ce jeu.",
+            TOS: "En cliquant sur {submit}, vous acceptez les [tos]Conditions de service[/tos] de Jackbox."
         },
         Iee = {
             BRANCH: gee,

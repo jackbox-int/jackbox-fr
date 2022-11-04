@@ -16285,7 +16285,7 @@ const BC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Envoyer</button><br/>\r
             </div>\r
             <button id='censorOptions' class='button'>Censor Options</button>\r
             <div class="footer"></div>\r
@@ -16321,7 +16321,7 @@ const BC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
+                drawing_empty: "Vous devez dessiner quelque chose !",
                 submit: "submit",
                 ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
             }
@@ -16542,10 +16542,10 @@ const BC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Envoyer",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
+                ERROR_NOTHING_ENTERED: "Vous devez écrire quelque chose !",
                 ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
             }
         }
@@ -16890,11 +16890,11 @@ const sh = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
+                wait: "Asseyez-vous et détendez-vous!",
+                vip_waiting: "En attente de tous les joueurs pour commencer",
+                vip_canStart: "Appuyez sur ce bouton quand tout le monde est pret",
+                vip_cancel: "Appuyez sur ce bouton pour annuler le démarrage du jeu",
+                vip_postgame: "Que voulez-vous faire maintenant ?",
                 vip_episodes_menu: "Episodes Menu",
                 vip_episodes_unload: "Unload Episode",
                 vip_episodes_report: "Report Episode",
@@ -16904,13 +16904,13 @@ const sh = `<div id="controller" class="state-controller controller-content">
                 vip_episodes_back: "Back",
                 vip_episodes_submit: "SUBMIT",
                 vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
+                button_start: "Tout le monde est là",
+                button_cancel: "Annuler",
                 button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
+                button_sameplayers: "Meme joueurs",
+                button_newplayers: "Nouveaux joueurs",
                 prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
+                prompt_choosecharacter: "Choisissez votre personnage",
                 button_censorOptions: "Censor Options",
                 censor_prompt: ""
             }
@@ -17260,7 +17260,7 @@ const sh = `<div id="controller" class="state-controller controller-content">
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visitez la galerie" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
