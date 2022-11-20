@@ -16882,25 +16882,25 @@ const BC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
+                wait: "Asseyez-vous et détendez vous !",
+                vip_waiting: "En attente de tous les joueurs pour commencer",
+                vip_canStart: "Appuyez sur ce bouton quand tous les joueurs ont rejoint",
+                vip_cancel: "Appuyez sur ce bouton pour annuler le lancement de la partie",
+                vip_postgame: "Que voulez-vous faire maintenant ?",
                 vip_episodes_menu: "Episodes Menu",
                 vip_episodes_unload: "Unload Episode",
                 vip_episodes_report: "Report Episode",
                 vip_episodes_warning: "Warning: user generated content is not rated",
                 vip_episodes_load: "Load an episode by id:",
                 vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
+                vip_episodes_back: "Retour",
+                vip_episodes_submit: "ENVOYER",
                 vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
+                button_start: "Tout le monde est là",
+                button_cancel: "Annuler",
                 button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
+                button_sameplayers: "Mêmes joueurs",
+                button_newplayers: "Nouveaux joueurs",
                 prompt_entername: "Enter your name",
                 prompt_choosecharacter: "Select your character",
                 button_censorOptions: "Censor Options",
@@ -17128,7 +17128,7 @@ const BC = `<div id="controller" class="state-controller controller-content">
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: f => f ? f.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: f => f ? f.length > 12 ? "Limite de 12 caractères" : null : "Vous devez écrire quelque chose !"
                         });
                         if (a.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -21080,7 +21080,7 @@ const $x = Et.View.extend({
             }) : this.model.get("isAudience") && (this.triggerMethod("client:message", {
                 type: "vote",
                 vote: i
-            }), this.promptComponent.model.set("html", `Thank you. Your choice: <span>${this.model.get("choices")[i].html}</span>`), this.choicesList.collection.reset()), !1
+            }), this.promptComponent.model.set("html", `Merci ! Votre choix : <span>${this.model.get("choices")[i].html}</span>`), this.choicesList.collection.reset()), !1
         }
     });
 const Hx = Px.extend({
