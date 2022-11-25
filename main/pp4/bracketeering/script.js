@@ -21098,7 +21098,7 @@ const Hx = Px.extend({
         return t.playerInfo = t.playerInfo || {}, t.playerInfo.username = t.playerName || "Audience", t.playerInfo.avatar && (t.playerInfo.avatar = t.playerInfo.avatar.frame), t.state === "Gameplay" && (t.state = "Logo"), t.state === "Lobby" && (this.client.isRole("player") || (t.state = "Logo"), t.playerIsVIP = t.isAllowedToStartGame, t.playerCanStartGame = t.isAllowedToStartGame, t.playerCanCensor = t.canCensor, t.gameCanStart = ["CanStart", "Countdown", "PostGame"].indexOf(t.lobbyState) !== -1, t.gameIsStarting = t.lobbyState === "Countdown", t.gameFinished = t.lobbyState === "PostGame"), t.state === "EnterSingleText" && (t.prompt = {
             html: t.text
         }, t.doneText = {
-            html: "Thanks"
+            html: "Merci"
         }, t.error = {
             html: t.error
         }), t.state === "MakeSingleChoice" && (t.choices = t.choices.map(e => ({
