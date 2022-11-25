@@ -4898,14 +4898,16 @@ var ow = Qo((uw, Fo) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/fourbage",
-            features: ["moderation", "kicking"]
+            features: ["moderation", "kicking"],
+            categoryId: "Fibbage4Game"
         }, {
             name: "Roomerang",
             tag: "htmf",
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/htmf",
-            features: ["moderation", "kicking"]
+            features: ["moderation", "kicking"],
+            categoryId: "MakeFriendsGame"
         }, {
             name: "Junktopia",
             tag: "antique-freak",
@@ -10539,23 +10541,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "c5e7935a060b98273ffafe59171d6148a6734883",
-            lastUpdated: 1668209573973,
-            version: "5.60.0",
+            sha: "c967e6196604f0dcb1b149c30b7de00a44b7d940",
+            lastUpdated: 1669143779438,
+            version: "5.67.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "c5e7935a060b98273ffafe59171d6148a6734883",
-                lastUpdated: 1668209573973,
-                version: "5.60.0",
+                sha: "c967e6196604f0dcb1b149c30b7de00a44b7d940",
+                lastUpdated: 1669143779438,
+                version: "5.67.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.60.0"
+                        version: "5.61.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10831,7 +10833,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp8/survey-bomb",
-                        version: "5.0.0"
+                        version: "5.67.0"
                     },
                     "triviadeath2-tjsp": {
                         file: "script.js",
@@ -10861,31 +10863,31 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/antique-freak",
-                        version: "5.55.0"
+                        version: "5.65.0"
                     },
                     fourbage: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.55.0"
+                        version: "5.65.0"
                     },
                     htmf: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.56.0"
+                        version: "5.66.0"
                     },
                     lineup: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.59.0"
+                        version: "5.65.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.58.0"
+                        version: "5.65.0"
                     },
                     prototype: {
                         file: "script.js",
@@ -10918,4 +10920,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=0b3769df.js.map
+//# sourceMappingURL=a934caff.js.map
