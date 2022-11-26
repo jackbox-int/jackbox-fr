@@ -21221,10 +21221,10 @@ const m1 = GC.extend({
                         break;
                     case "WiredBomb":
                         if (this.$el.find("#bombintern-wiredbomb-triggers").html(""), this.buildRuleFolder(a, "bombintern-wiredbomb-rules"), i.triggers && i.triggers.length > 0) {
-                            t = "<div class='bomb-header' id='button-header'><span>TAP BUTTONS TO CUT WIRES</span></div>";
+                            t = "<div class='bomb-header' id='button-header'><span>APPUYEZ SUR LES BOUTONS POUR COUPER LES FILS</span></div>";
                             for (let _ = 0; _ < i.triggers.length; ++_) {
                                 const S = i.triggers[_],
-                                    O = S.name || "Wire";
+                                    O = S.name || "Fil";
                                 t += `<button type='button' ${S.hasBeenCut?"disabled":""} data-param='${S.index}' class='pure-input-1 bombintern-wiredbomb-button button-large pure-button button-bombintern'>${O} ${S.index}</button>`
                             }
                             this.$el.find("#bombintern-wiredbomb-triggers").html(t)
@@ -21405,23 +21405,23 @@ const m1 = GC.extend({
         if (a.rules && a.rules.length > 0 || a.sort && a.sort.length > 0) {
             switch (n += "<div class='bomb-header' id='instruction-header'>", t) {
                 case "SmashPuzzle":
-                    n += "<span>READ INSTRUCTIONS BELOW TO HELP SMASH!</span>";
+                    n += "<span>LISEZ LES INSTRUCTIONS CI-DESSOUS</span>";
                     break;
                 case "WiredBomb":
-                    n += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                    n += "<span>SUIVEZ LES INSTRUCTIONS</span>";
                     break;
                 case "CoffeeBomb":
-                    n += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                    n += "<span>SUIVEZ LES INSTRUCTIONS</span>";
                     break;
                 case "FilingBomb":
                     break;
                 case "CopierBomb":
                     break;
                 case "KeypadBomb":
-                    n += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                    n += "<span>SUIVEZ LES INSTRUCTIONS</span>";
                     break
             }
-            if (n += "</div>", n += "<div class='rules-folder-tab'><span>MANUAL</span></div><div class='rules-folder'>", t === "FilingBomb") n += `<div class='rules-page'><span>${a.sort}</span></div>`;
+            if (n += "</div>", n += "<div class='rules-folder-tab'><span>MANUEL</span></div><div class='rules-folder'>", t === "FilingBomb") n += `<div class='rules-page'><span>${a.sort}</span></div>`;
             else if (t === "CopierBomb")
                 for (let f = 0; f < a.rules.length; ++f) n += "<div class='rules-page copier-rule-page'>", i = a.rules[f], i.header !== "" && (n += `<div class='copier-icon'><img src='${new URL(Object.assign({"../images/AlienBlue.png":Yx,"../images/AlienGreen.png":Kx,"../images/AlienPink.png":Jx,"../images/AlienPurple.png":Qx,"../images/AlienYellow.png":Zx,"../images/GreenDiamond.png":e1,"../images/OrangeArrow.png":t1,"../images/RedCircle.png":n1,"../images/WhiteSquare.png":i1,"../images/YellowTriangle.png":r1,"../images/copier-action.png":s1,"../images/copier-button-down.png":o1,"../images/copier-button.png":a1,"../images/copier-knob-1.png":Cc,"../images/copier-knob-2.png":xc,"../images/copier-knob-3.png":Ec,"../images/copier-knob-4.png":_c,"../images/copier-load.png":l1,"../images/copier-panel-closed.png":c1,"../images/copier-panel-open.png":u1,"../images/jumpbttncutwires.png":h1,"../images/jumpbttnrules.png":d1,"../images/logo.png":f1,"../images/panel_open_alt.png":p1})[`.. / images / $ {
                     i.header
