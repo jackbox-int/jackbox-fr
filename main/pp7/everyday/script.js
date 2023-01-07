@@ -21278,33 +21278,33 @@ class vR {
     }
     parseCancelerData(e) {
         const n = e.captain || {};
-        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [n.avatar], this.update.infoText = `STOPPING ${n.name}`, this.update.infoRole = "SELFISH"
+        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [n.avatar], this.update.infoText = `STOP ${n.name}`, this.update.infoRole = "SELFISH"
     }
     parseCanceledByData(e) {
         const n = e.captain || {};
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} IS SCOLDING YOU`, this.update.infoRole = "KILLJOY"
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} ESSAIE DE TE STOPPER`, this.update.infoRole = "KILLJOY"
     }
     parseAllCollabData(e) {
         const n = this.otherParticipants;
-        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = n.map(i => i.avatar), e.waitingFor ? e.waitingFor.length === 1 ? this.update.infoText = "WAITING FOR 1 MORE" : (this.update.infoText = `WAITING FOR ${e.waitingFor.length} OTHERS`, this.update.infoRole = "THE FAM") : this.update.infoText = "EVERYONE IS HERE"
+        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = n.map(i => i.avatar), e.waitingFor ? e.waitingFor.length === 1 ? this.update.infoText = "EN ATTENTE D'UNE AUTRE PERSONNE" : (this.update.infoText = `EN ATTENTE DE ${e.waitingFor.length} PERSONNES`, this.update.infoRole = "THE FAM") : this.update.infoText = "TOUT LE MONDE EST LA"
     }
     parseOpenCollabData(e) {
         const n = e.captain,
             i = this.participants,
             o = this.otherParticipants;
         if (e.state === "WaitingForAny") {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "WAITING FOR HELPERS";
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "EN ATTENTE D'AUTRES JOUEURS";
             return
         }
         if (!n) {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "CAPTAIN HAS LEFT";
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "LE CAPITAINE EST PARTI";
             return
         }
         if (this.isCaptain) {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = i.map(r => r.avatar), this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state), i.length === 1 ? this.update.infoText = `${i[0].name} IS HELPING` : this.update.infoText = `YOU HAVE ${i.length} HELPERS`;
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = i.map(r => r.avatar), this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state), i.length === 1 ? this.update.infoText = `${i[0].name} EST EN TRAIN D'AIDER` : this.update.infoText = `${i.length} PERSONNES SONT EN TRAIN D'AIDER`;
             return
         }
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoRole = this.parseContextualParticipantRole(e.state), o.forEach(r => this.update.infoAvatars.push(r.avatar)), o.length === 0 ? this.update.infoText = `HELPING ${n.name}` : this.update.infoText = `${n.name} HAS ${i.length} HELPERS`
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoRole = this.parseContextualParticipantRole(e.state), o.forEach(r => this.update.infoAvatars.push(r.avatar)), o.length === 0 ? this.update.infoText = `EN TRAIN D'AIDER ${n.name}` : this.update.infoText = ` ${i.length} PERSONNES AIDENT ${n.name}`
     }
     parseHelpCollabData(e) {
         const n = e.captain,
@@ -21790,7 +21790,7 @@ const wR = je.View.extend({
         }
     }),
     MR = `<div class="clamp">
-    <p class="info">This task can\u2019t start without helpers. Yell at your family to join you.</br>Or you can leave this task by tapping the X.</p>
+    <p class="info">Cette tâche ne peut pas démmarer sans autres personnes. Demande aux autres membres de venir t'aider sur cette tâche.</br>Ou vous pouvez quitter cette tâche en appuyant sur le X.</p>
 </div>
 <button class="leave"></button>
 <div class="instructions-container">
@@ -77817,7 +77817,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             const t = this.model.get("distance"),
                 e = this.distanceMap[t] || 5e3;
             this.model.setUpdate({
-                infoText: "SCRUB",
+                infoText: "FROTTE",
                 distanceInPx: e,
                 lastDistance: 0,
                 distanceScrubbed: 0
@@ -84598,7 +84598,7 @@ const lae = je.View.extend({
             }
             this.model.setUpdate({
                 demoClass: n ? `swipe-${n.toLowerCase()}` : "",
-                infoText: n ? `SWIPE ${n}` : ""
+                infoText: n ? (n === "UP" ?`GLISSE VERS LE HAUT`:(n==="DOWN"?"GLISSE VERS LE BAS":(n==="LEFT"?"GLISSE VERS LA GAUCHE":"GLISSE VERS LA DROITE"))) : ""
             })
         },
         onSwipeEnd(t) {
@@ -84674,7 +84674,7 @@ const lae = je.View.extend({
         setup() {
             let t = this.model.get("wait") || 0;
             this.model.get("category") === "EMERGENCY" && (t = 500), this.throttledTap = X.exports.throttle(this.onTap, t, !0), this.listenTo(this.model, "change:tapsLeft", this.onTapsLeftChange), this.model.setUpdate({
-                infoText: "TAPPER",
+                infoText: "TAPPE",
                 isWaiting: !1,
                 isWaitingForTimer: !1,
                 isWaitingForServer: !1
@@ -84735,7 +84735,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAPPER",
+                infoText: "TAPPE",
                 isWaiting: !1,
                 tapsLeft: this.model.get("tapsRequired")
             })
