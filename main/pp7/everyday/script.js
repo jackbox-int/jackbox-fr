@@ -26626,7 +26626,7 @@ const aT = `
                 observe: ["state", "participant", "captain"],
                 updateMethod: "html",
                 onGet([t, e, n]) {
-                    return t === "GizmosMechanicCaptain" ? `You are setting the gizmos. Ask <span class="player-name ${e.avatar}">${e.name}</span> for the correct settings.` : `These are the correct gizmo settings. Describe them to <span class="player-name ${n.avatar}">${n.name}</span>.`
+                    return t === "GizmosMechanicCaptain" ? `Vous êtes en train de changer les paramètres. Demande à <span class="player-name ${e.avatar}">${e.name}</span> pour les paramètres correctes.` : `Voici les paramètres correctes. Décris les à <span class="player-name ${n.avatar}">${n.name}</span>.`
                 }
             },
             ".gizmo-panel": {
