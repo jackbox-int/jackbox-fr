@@ -16890,27 +16890,27 @@ const qC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
+                wait: "Asseyez-vous et détendez-vous!",
+                vip_waiting: "En attente de tous les joueurs...",
+                vip_canStart: "Appuyez sur ce bouton pour démarrer la partie",
+                vip_cancel: "Appuyez sur ce bouton pour annuler le démarrage de la partie",
+                vip_postgame: "Que voulez-vous faire maintenant ?",
+                vip_episodes_menu: "Menu des épisodes",
+                vip_episodes_unload: "Enlever l'épisode",
+                vip_episodes_report: "Report l'épisode",
                 vip_episodes_warning: "Warning: user generated content is not rated",
                 vip_episodes_load: "Load an episode by id:",
                 vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
+                vip_episodes_back: "Retour",
+                vip_episodes_submit: "ENVOYER",
                 vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
+                button_start: "Tout le monde est là",
+                button_cancel: "Annuler",
+                button_changename: "Changer son nom",
+                button_sameplayers: "Mêmes joueurs",
+                button_newplayers: "Nouveaux joueurs",
+                prompt_entername: "Entrez votre nom",
+                prompt_choosecharacter: "Sélectionnez votre personnage",
                 button_censorOptions: "Censor Options",
                 censor_prompt: ""
             }
@@ -21310,10 +21310,10 @@ class vR {
         const n = e.captain,
             i = this.participants;
         if (this.isCaptain) {
-            this.update.infoColor = i[0].avatar, this.update.infoAvatars = [i[0].avatar], this.update.infoText = `WORKING WITH ${i[0].name}`, this.update.infoRole = this.parseContextualCaptainRole(e.state), this.update.playerRole = this.parseContextualParticipantRole(e.state);
+            this.update.infoColor = i[0].avatar, this.update.infoAvatars = [i[0].avatar], this.update.infoText = `TRAVAILLE AVEC ${i[0].name}`, this.update.infoRole = this.parseContextualCaptainRole(e.state), this.update.playerRole = this.parseContextualParticipantRole(e.state);
             return
         }
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `WORKING WITH ${n.name}`, this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state)
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `TRAVAILLE AVEC ${n.name}`, this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state)
     }
     parseContextualCaptainRole(e) {
         switch (e = e.replace("Participant", "").replace("Captain", ""), e) {
@@ -24354,7 +24354,7 @@ const Jy = {
     oS = `<div class="scrollable">
     <div class="clamp">
         <div class="dialed"></div>
-        <button class="clear">CLEAR</button>
+        <button class="clear">EFFACER</button>
         <div class="handset">
             <button class="key" data-dial="1"><div class="key-move">1</div></button>
             <button class="key" data-dial="2"><div class="key-move">2</div></button>
@@ -24369,7 +24369,7 @@ const Jy = {
             <button class="key" data-dial="0"><div class="key-move">0</div></button>
             <button class="key key-pound" data-dial="#"><div class="key-move">#</div></button>
         </div>
-        <button class="button phonebook-button"><div class="icon"></div>OPEN PHONEBOOK</button>
+        <button class="button phonebook-button"><div class="icon"></div>NUMEROS DE TELEPHONES</button>
     </div>
 </div>
 <div class="phonebook">
@@ -28015,7 +28015,7 @@ const CT = je.View.extend({
     <div class="info"></div>
     <div id="items-region"></div>
     <div id="gesture-ui"></div>
-    <button class="button found">I FOUND IT!<div class="selected-item item"></div></button>
+    <button class="button found">JE L'AI TROUVE !<div class="selected-item item"></div></button>
 </div>
 <button class="leave"></button>
 <div class="instructions-container">
@@ -28067,7 +28067,7 @@ const CT = je.View.extend({
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> to describe the item you need to find.` : ""
+                    return t ? `Demande à <span class="player-name ${t.avatar}">${t.name}</span> l'objet que tu as besoin de trouver.` : ""
                 }
             },
             ".found": {
@@ -28115,7 +28115,7 @@ const CT = je.View.extend({
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "RECOMMENCE"
             }))
         },
         getItems() {
@@ -28270,7 +28270,7 @@ const CT = je.View.extend({
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Describe this item to <span class="player-name ${t.avatar}">${t.name}</span>.` : ""
+                    return t ? `Décris cet objet à <span class="player-name ${t.avatar}">${t.name}</span>.` : ""
                 }
             },
             ".item": {
@@ -28294,7 +28294,7 @@ const CT = je.View.extend({
     }),
     OT = `<div class="scrollable">
     <div class="clamp">
-        <div class="info">You have the instructions. Tell your gatherers what you need:</div>
+        <div class="info">Vous avez les instructions. Dites aux autres personnes ce que vous devez récupérer :</div>
         <div class="requirements"></div>
     </div>
 </div>
@@ -28315,7 +28315,7 @@ const CT = je.View.extend({
             ".instructions": {
                 observe: "name",
                 onGet(t) {
-                    return `Gather items for ${t}`
+                    return `Récupérez des ingrédients pour ${t}`
                 }
             },
             ".score": {
@@ -28340,7 +28340,7 @@ const CT = je.View.extend({
                     }), e.forEach(V => {
                         let A = "item";
                         n.find(c => c.id === V.id) && (A += " selected"), i += `<div class="${A}">${V.name} <em>${V.location||""}</em></div>`
-                    }), o.length && (i += `<div class="extra-title">${o.length} unneeded ${o.length===1?"item":"items"} must be put back!</div>`, i += `<div class="item extra">${o.join(", ")}</div>`), i
+                    }), o.length && (i += `<div class="extra-title">${o.length} ${o.length===1?"item":"items"} en trop !</div>`, i += `<div class="item extra">${o.join(", ")}</div>`), i
                 }
             }
         },
@@ -28458,7 +28458,7 @@ const CT = je.View.extend({
                 observe: ["locationName", "captain"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return e ? `Ask <span class="player-name ${e.avatar}">${e.name}</span> what you need to gather from ${t}` : ""
+                    return e ? `Demande à <span class="player-name ${e.avatar}">${e.name}</span> ce que tu as besoin de récupérer dans ${t}` : ""
                 }
             },
             ".location": {
@@ -81110,7 +81110,7 @@ const rae = je.View.extend({
                 observe: ["participant", "destination"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return !t || !e ? "" : `Ask <span class="player-name ${t.avatar}">${t.name}</span> for directions to ${e.name}`
+                    return !t || !e ? "" : `Demande à <span class="player-name ${t.avatar}">${t.name}</span> les instructions pour aller à ${e.name}`
                 }
             },
             ".scene-box-wrapper": {
