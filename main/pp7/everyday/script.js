@@ -21361,7 +21361,7 @@ class vR {
             const o = n.find(r => r.id === i.task.id);
             return {
                 id: i.task.id,
-                text: `${i.player.name} needs help`,
+                text: `${i.player.name} a besoin d'aide`,
                 avatars: [i.player.avatar],
                 color: i.player.avatar,
                 points: o ? o.participationPoints : 0
@@ -21441,9 +21441,9 @@ const wR = je.View.extend({
                 observe: ["status", "alert"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return this.model.isAvailableOpenOrAll() || t === "CAN_ASK_FOR_HELP" ? "ASK FOR HELP" : t === "WAITING_FOR_HELP" ? "WAITING FOR HELP" : e && this.model.needsHelp() ? `
+                    return this.model.isAvailableOpenOrAll() || t === "CAN_ASK_FOR_HELP" ? "DEMANDE DE L'AIDE" : t === "WAITING_FOR_HELP" ? "A BESOIN D'AIDE" : e && this.model.needsHelp() ? `
                             <div class="avatar head ${e.player.avatar}"></div>
-                            <span>HELP</span> ${e.player.name}
+                            <span>AIDE</span> ${e.player.name}
                         ` : ""
                 },
                 attributes: [{
@@ -21599,13 +21599,13 @@ const wR = je.View.extend({
             ".title": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `${t.role.id} TASK LIST`
+                    return `LISTE DE TACHES ${t.role.id}`
                 }
             },
             ".empty": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `Chill... No ${t.role.id} Tasks Available Right Now`
+                    return `Détendez-vous... Aucune tache pour ${t.role.id} n'est disponible`
                 }
             },
             ".success": {
@@ -21688,15 +21688,15 @@ const wR = je.View.extend({
         model: new ze.Model,
         hideTimer: null,
         countUpInterval: null,
-        failText: ["TOO<br/>BAD", "NOT<br/>GREAT", "NO<br/>GOOD", "THUMBS<br/>DOWN"],
-        emergencyText: ["CRISIS<br/>AVERTED", "PHEW!", "MERCY!", "SAVED<br/>THE DAY", "THAT<br/>WAS<br/>CLOSE", "HEROIC<br/>SAVE", "THANK<br/>HADES"],
-        selfishText: ["DEVILISH", "YOU<br/>DEVIL!", "SNEAKY!", "HOPE<br/>YOU'RE<br/>HAPPY", "DEMONIC", "GOT AWAY WITH IT", "DIABOLICAL", "FIENDISH", "DEVIOUS", "SLY DEVIL", "NOBODY SAW", "AT WHAT<br/>COST?"],
-        cancelerText: ["FAMILY<br/>HERO", "YOU<br/>TELL 'EM!", "THIS IS<br/>YOUR<br/>HOUSE", "ORDER<br/>RESTORED", "FUN<br/>CANCELED", "JOY<br/>AVERTED", "RULES<br/>ARE<br/>RULES", "YOU ARE<br/>THE LAW", "KAPOW!"],
-        successText: ["NICE<br/>ONE", "GOT<br/>IT", "GOOD<br/>JOB", "GREAT<br/>WORK", "WELL<br/>DONE", "GREAT", "GOOD<br/>FOR YOU", "BEAUTIFUL", "YOU<br/>DID IT", "TERRIFIC", "NICE<br/>GOING", "MUY<br/>BIEN", "SUPERB", "KEEP<br/>IT UP", "WAY<br/>TO GO", "COOL<br/>MOVES", "HECK<br/>YEAH", "NOT<br/>BAD", "DEEECENT", "BRAVO"],
-        storyText: ["WOAH!", "HOLY<br/>SMOKES", "BIG<br/>POINTS", "HUGE", "SO GREAT", "MASSIVE<br/>WIN", "HUMDINGER", "SPICY", "DING<br/>DING", "YES<br/>PLEASE", "PLOT<br/>POINT"],
+        failText: ["DOMMAGE", "C'EST<br/>RATÉ", "PAS<br/>BIEN", "C'EST<br/>NON"],
+        emergencyText: ["CRISE<br/>ÉVITÉE", "PHEW !", "MERCI !", "C'ÉTAIT<br/>LIMITE", "C'ÉTAIT<br/>CHAUD", "SAUVETAGE<br/>HÉROIQUE", "SAUVÉ !"],
+        selfishText: ["DISCRET !", "QUEL<br/>DÉMON !", "SOURNOIS !", "J'ESPERE<br/>QUE TU ES<br/>CONTENT", "DÉMONIAQUE", "NE LE DIS A PERSONNE", "DIABOLIQUE", "MONSTRUEUX", "TORTUEUX", "DIABLE", "PERSONNE<br/>L'A VU", "A QUEL<br/>PRIX ?"],
+        cancelerText: ["HÉRO", "VOUS ÊTES<br/>LE MEILLEUR!", "C'EST<br/>VOTRE<br/>MAISON", "ORDRE<br/>RESTAURÉ", "IL NE<br/>RIGOLERA PLUS", "BIEN<br/>FAIT", "LES REGLES<br/>SONT<br/>LES REGLES", "VOUS ÊTES<br/>LA LOI", "BOOOOM !"],
+        successText: ["BIEN<br/>JOUÉ", "BRILLANT", "BON<br/>TRAVAIL", "SUPER", "GÉNIAL", "BIEN", "VRAIMENT<br/>COOL", "MAGNIFIQUE", "C'EST<br/>FAIT", "TERRIFIANT", "CONTINUE", "MUY<br/>BIEN", "TROP<br/>GÉNIAL", "CONTINUE<br/>COMME CA", "WOOOOOW", "QUEL<br/>GÉNIE", "YEAH", "PAS<br/>MAUVAIS", "BOOOOM !", "BRAVO"],
+        storyText: ["WOAH!", "TROP<br/>FORT", "BEAUCOUP DE<br/>POINTS", "GÉANT", "TROP BIEN", "GAIN<br/>MASSIF", "ENCORE PLUS", "TOUS CES<br/>POINTS", "DING<br/>DING", "OUI OUI OUI", "WOUHAAAAA"],
         messages: {
-            EAT_BUGS: "Tasty!<br/>Chomp more!",
-            POSE_FOR_PIC: "Adorable!<br/>Keep hamming!",
+            EAT_BUGS: "Délicieux!<br/>J'en veux plus!",
+            POSE_FOR_PIC: "Adorable!<br/>Continue!",
             SHOW_BELLY: "Good flop!<br/>Flop again!",
             SHOW_CLAWS: "Great!<br/>Keep holding!",
             FIGHT_VACUUM: "Nice!<br/>Keep fighting!",
