@@ -72288,7 +72288,7 @@ const bc = E.extend({
                     html: `
                     <p>DEVIL</p>
                     <p>${t.name}</p>
-                    <p>DEVILLE, UNDERWORLD</p>
+                    <p>DEVILLE, ENFER</p>
                     <p>${o}</p>
                     <p>${r}</p>
                 `
@@ -74875,7 +74875,7 @@ const Yse = E.extend({
         className: "search-scene",
         progressCounter: 0,
         cloudCounter: 0,
-        mistakeText: ["IT'S NOT<br/>HERE", "NO LUCK", "DIDN'T<br/>FIND IT", "NOPE"],
+        mistakeText: ["CE N'EST<br/>PAS LA", "PAS DE<br/>CHANCE", "PAS<br/>TROUVE", "DOMMAGE"],
         imageManifest: {
             sprite: new URL("main/pp7/everyday/assets/43bbeef4.png", self.location).href
         },
@@ -75186,7 +75186,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>TAP AND HOLD!</span>"
+            html: "<span>APPUIES ET MAINTIENS !</span>"
         }],
         initializeTimeline() {
             const t = this.model.get("durationInMs");
@@ -75355,13 +75355,13 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: '<span class="message">DO NOTHING!</span>'
+            html: '<span class="message">NE FAIS RIEN !</span>'
         }],
         onLoadComplete() {
             s.set(".e.text", {
                 rotation: -10
             }), this.model.setUpdate({
-                message: "DO NOTHING!"
+                message: "NE FAIS RIEN !"
             })
         }
     }),
@@ -75384,12 +75384,12 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>ROTATE!</span>"
+            html: "<span>PIVOTE !</span>"
         }],
         onLoadComplete() {
             const t = this.model.get("direction");
-            let e = "ROTATE!";
-            t && t.toLowerCase() === "clockwise" && (e = "ROTATE<br/>CLOCKWISE!"), t && t.toLowerCase() === "counter" && (e = "ROTATE<br/>COUNTER!"), this.model.setUpdate({
+            let e = "PIVOTE !";
+            t && t.toLowerCase() === "clockwise" && (e = "PIVOTE<br/>DANS LE SENS HORAIRE !"), t && t.toLowerCase() === "counter" && (e = "PIVOTE<br/>DANS LE SENS ANTI-HORAIRE!"), this.model.setUpdate({
                 message: e
             })
         },
@@ -75406,12 +75406,12 @@ const Yse = E.extend({
             class: "text background",
             type: "div",
             pos: [50, 50],
-            html: "<span>SCRUB!</span>"
+            html: "<span>FROTTE !</span>"
         }, {
             class: "text foreground",
             type: "div",
             pos: [50, 50],
-            html: "<span>SCRUB!</span>"
+            html: "<span>FROTTE !</span>"
         }],
         initializeTimeline() {
             s.set(".e.foreground", {
@@ -75515,7 +75515,7 @@ const Yse = E.extend({
             ".text span": {
                 observe: "isWaiting",
                 onGet(t) {
-                    return t ? "WAIT!" : "TAP!"
+                    return t ? "ATTEND !" : "TAPPE !"
                 }
             }
         },
@@ -75523,7 +75523,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>TAP!</span>"
+            html: "<span>TAPPE !</span>"
         }]
     }),
     joe = E.extend({
@@ -77453,7 +77453,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         tapTimeoutLength: 500,
         rotateTimeout: null,
         rotateTimeoutLength: 150,
-        successText: ["NICE ONE", "GOT IT", "GOOD JOB", "GREAT WORK", "WELL DONE"],
+        successText: ["SUPER", "GENIAL", "BIEN JOUE", "BON TRAVAIL", "PARFAIT"],
         bindings: {
             ".leave": {
                 observe: "canLeave",
@@ -77483,7 +77483,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> what to do.` : ""
+                    return t ? `Demande à <span class="player-name ${t.avatar}">${t.name}</span> ce que tu dois faire.` : ""
                 },
                 classes: {
                     conceal: {
@@ -77508,7 +77508,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 isWaiting: !1
             }), t.changed.currentStepIndex === void 0 ? this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "RECOMMENCE"
             }) : (this.model.setUpdate({
                 isWaiting: !1,
                 isSuccess: !0,
@@ -77726,7 +77726,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Give <span class="player-name ${t.avatar}">${t.name}</span> these instructions. Steps will be crossed off as they\u2019re completed.` : ""
+                    return t ? `Donne à <span class="player-name ${t.avatar}">${t.name}</span> ces instructions. Les étapes vont être barrées quand elles seront faites.` : ""
                 }
             },
             ".steps": {
@@ -77748,23 +77748,23 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         getStepText(t) {
             switch (t.mechanic) {
                 case "ROTATE_CLOCK":
-                    return `${t.instructions} by rotating right twice`;
+                    return `${t.instructions} en tournant deux fois vers la droite`;
                 case "ROTATE_COUNTER":
-                    return `${t.instructions} by rotating left twice`;
+                    return `${t.instructions} en tournant deux fois vers la gauche`;
                 case "TAP":
-                    return `${t.instructions} by tapping once`;
+                    return `${t.instructions} en tapant une fois`;
                 case "TAP_3":
-                    return `${t.instructions} by triple tapping`;
+                    return `${t.instructions} en tapant trois fois`;
                 case "TAP_HOLD":
-                    return `${t.instructions} by tapping and holding for 3 seconds`;
+                    return `${t.instructions} en restant appuyé pendant 3 secondes`;
                 case "SWIPE_UP":
-                    return `${t.instructions} by swiping up`;
+                    return `${t.instructions} en glissant vers le haut`;
                 case "SWIPE_DOWN":
-                    return `${t.instructions} by swiping down`;
+                    return `${t.instructions} en glissant vers le bas`;
                 case "SWIPE_LEFT":
-                    return `${t.instructions} by swiping left`;
+                    return `${t.instructions} en glissant vers la gauche`;
                 case "SWIPE_RIGHT":
-                    return `${t.instructions} by swiping right`;
+                    return `${t.instructions} en glissant vers la droite`;
                 default:
                     return ""
             }
@@ -77869,7 +77869,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
     <div class="progress">
         <div class="progress-bar"></div>
     </div>
-    <div class="info">SCRUB TO SEARCH</div>
+    <div class="info">FROTTER POUR CHERCHER</div>
 `,
     _oe = hu.extend({
         className: "gesture scrub",
@@ -77945,7 +77945,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             ".info": {
                 observe: "name",
                 onGet(t) {
-                    return `Tap any location to search for ${t}`
+                    return `Tapper sur n'importe quelle emplacement pour chercher ${t}`
                 }
             },
             ".leave": {
@@ -78050,7 +78050,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Read <span class="player-name ${t.avatar}">${t.name}</span> this word. Spelling and spaces count!` : ""
+                    return t ? `Lis à <span class="player-name ${t.avatar}">${t.name}</span> ce mot. L'orthographe et les espaces comptent !` : ""
                 }
             },
             ".word": "correctText"
@@ -78067,9 +78067,9 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
     iae = `<div class="clamp">
     <div class="info"></div>
     <form>
-        <input type="text" name="word" placeholder="ENTER WORD" maxlength=40
+        <input type="text" name="word" placeholder="ENTRER UN MOT" maxlength=40
             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-        <button type="submit" class="button submit">SUBMIT</button>
+        <button type="submit" class="button submit">ENVOYER</button>
     </form>
 </div>
 <button class="leave"></button>
@@ -78106,7 +78106,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> for the word you need.` : ""
+                    return t ? `Demande à <span class="player-name ${t.avatar}">${t.name}</span> le mot que tu as besoin !` : ""
                 }
             },
             "input[name=word]": "word",
@@ -78137,7 +78137,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "RECOMMENCE"
             }))
         },
         isPaused(t, e) {
@@ -84369,7 +84369,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAP AND HOLD",
+                infoText: "APPUYER ET MAINTENIR",
                 elapsedInMs: 0
             }), this.listenTo(this.model, "change:isPaused", this.onIsPausedChange)
         },
@@ -84430,7 +84430,7 @@ const lae = je.View.extend({
         }),
         setup() {
             this.boundOnKeyDown = this.onKeyDown.bind(this), document.addEventListener("keydown", this.boundOnKeyDown), this.model.setUpdate({
-                infoText: "DO NOTHING",
+                infoText: "NE FAITES RIEN",
                 elapsedInMs: 0
             }), this.listenTo(this.model, "change:isPaused", this.onIsPausedChange)
         },
@@ -84455,13 +84455,13 @@ const lae = je.View.extend({
         getMistakeMessage(t) {
             switch (t) {
                 case "key":
-                    return "YOU HIT A KEY!";
+                    return "VOUS AVEZ ECRIT QUELQUE CHOSE!";
                 case "mouse":
-                    return "YOU MOVED THE CURSOR!";
+                    return "VOUS AVEZ BOUGE LE CURSEUR";
                 case "touch":
-                    return "YOU TOUCHED!";
+                    return "VOUS AVEZ TOUCHE !";
                 case "move":
-                    return "YOU MOVED!";
+                    return "VOUS AVEZ BOUGE !";
                 default:
                     return ""
             }
@@ -84495,7 +84495,7 @@ const lae = je.View.extend({
         isRotating: !1,
         setup() {
             const t = this.model.get("direction").toLowerCase() || "clockwise",
-                e = t === "clockwise" ? "ROTATE RIGHT" : "ROTATE LEFT";
+                e = t === "clockwise" ? "PIVOTER VERS LA DROITE" : "PIVOTER VERS LA GAUCHE";
             this.model.setUpdate({
                 demoClass: t,
                 infoText: e,
@@ -84519,7 +84519,7 @@ const lae = je.View.extend({
             let r = 0;
             if (n === "clockwise" ? r = o / i * 100 : n === "counter" && o !== 0 ? r = -o / i * 100 : r = Math.abs(o) / i * 100, r < 0) {
                 this.sceneView.onMistake(), this.model.set({
-                    mistakeText: "WRONG WAY",
+                    mistakeText: "MAUVAISE DIRECTION",
                     mistake: !0
                 });
                 return
@@ -84592,7 +84592,7 @@ const lae = je.View.extend({
                 n = e[t];
             if (t === e.length) {
                 this.model.setUpdate({
-                    infoText: "DONE!"
+                    infoText: "REUSSI !"
                 });
                 return
             }
@@ -84674,7 +84674,7 @@ const lae = je.View.extend({
         setup() {
             let t = this.model.get("wait") || 0;
             this.model.get("category") === "EMERGENCY" && (t = 500), this.throttledTap = X.exports.throttle(this.onTap, t, !0), this.listenTo(this.model, "change:tapsLeft", this.onTapsLeftChange), this.model.setUpdate({
-                infoText: "TAP",
+                infoText: "TAPPER",
                 isWaiting: !1,
                 isWaitingForTimer: !1,
                 isWaitingForServer: !1
@@ -84735,7 +84735,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAP",
+                infoText: "TAPPER",
                 isWaiting: !1,
                 tapsLeft: this.model.get("tapsRequired")
             })
@@ -84794,7 +84794,7 @@ const mae = `${_1}
         <div class="scene-box-wrapper">
             <div class="scene-box">
                 <div class="hand"></div>
-                <p>LOOK UP AND LISTEN</p>
+                <p>REGARDEZ L'ECRAN ET ECOUTEZ</p>
             </div>
         </div>
         <div class="doh"></div>
@@ -84910,7 +84910,7 @@ const mae = `${_1}
                     role: {
                         id: "THE CAT"
                     },
-                    name: t.catName || "THE CAT"
+                    name: t.catName || "LE CHAT"
                 }, t.state !== "AudienceMechanic") return;
             const e = this.model.get("blob"),
                 n = e ? e.catTaskWorkingOn : null;
