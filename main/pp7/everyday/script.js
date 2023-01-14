@@ -21600,13 +21600,13 @@ const wR = je.View.extend({
             ".title": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `LISTE DE TACHES ${t.tole.id == "CHILD"?"ENFANT":(t.role.id=="ADULT"?"ADULTE":"ADO")}`
+                    return `LISTE DE TACHES ${t.role.id == "CHILD"?"ENFANT":(t.role.id=="ADULT"?"ADULTE":"ADO")}`
                 }
             },
             ".empty": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `Détendez-vous... Aucune tache pour ${t.tole.id == "CHILD"?"ENFANT":(t.role.id=="ADULT"?"ADULTE":"ADO")} n'est disponible`
+                    return `Détendez-vous... Aucune tache pour ${t.role.id == "CHILD"?"ENFANT":(t.role.id=="ADULT"?"ADULTE":"ADO")} n'est disponible`
                 }
             },
             ".success": {
@@ -24740,7 +24740,7 @@ const Jy = {
             ".instructions": {
                 observe: "listingName",
                 onGet(t) {
-                    return `Call "${t}"`
+                    return `Appelez "${t}"`
                 }
             },
             ".score": {
