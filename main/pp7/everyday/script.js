@@ -21265,11 +21265,11 @@ class vR {
         this.currentState.state !== e && (this.update.pendingState = e)
     }
     parseRoleFromAvatar(e) {
-        return e.includes("Adult") ? "ADULTE" : e.includes("Child") ? "ENFANT" : e.includes("Teen") ? "ADO" : ""
+        return e.includes("Adult") ? "ADULT" : e.includes("Child") ? "CHILD" : e.includes("Teen") ? "TEEN" : ""
     }
     parsePlayerData(e) {
-        console.log(e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id : null)
-        this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id : null
+        const enToFr = {"ADULT":"ADULTE", "CHILD":"ENFANT","TEEN":"ADO"}
+        this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? enToFr[e.playerInfo.role.id] : null
     }
     parseEmergencyData(e) {
         e.playerThatCausedEmergency || (e.playerThatCausedEmergency = {
