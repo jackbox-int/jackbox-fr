@@ -21076,7 +21076,7 @@ const fR = je.View.extend({
                 alertText: e.text,
                 alertAvatars: e.avatars,
                 alertColor: e.color,
-                infoRole: "NEEDS HELP",
+                infoRole: "BESOIN D'AIDE",
                 alertPoints: e.points
             })
         }
@@ -21600,13 +21600,13 @@ const wR = je.View.extend({
             ".title": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `LISTE DE TACHES ${t.role.id}`
+                    return `LISTE DE TACHES ${t.tole.id == "CHILD"?"ENFANT":(t.role.id=="ADULT"?"ADULTE":"ADO")}`
                 }
             },
             ".empty": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `Détendez-vous... Aucune tache pour ${t.role.id} n'est disponible`
+                    return `Détendez-vous... Aucune tache pour ${t.tole.id == "CHILD"?"ENFANT":(t.role.id=="ADULT"?"ADULTE":"ADO")} n'est disponible`
                 }
             },
             ".success": {
