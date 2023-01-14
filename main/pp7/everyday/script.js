@@ -21265,7 +21265,7 @@ class vR {
         this.currentState.state !== e && (this.update.pendingState = e)
     }
     parseRoleFromAvatar(e) {
-        return e.includes("Adult") ? "ADULT" : e.includes("Child") ? "CHILD" : e.includes("Teen") ? "TEEN" : ""
+        return e.includes("Adult") ? "ADULTE" : e.includes("Child") ? "ENFANT" : e.includes("Teen") ? "ADO" : ""
     }
     parsePlayerData(e) {
         this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id : null
@@ -21274,7 +21274,7 @@ class vR {
         e.playerThatCausedEmergency || (e.playerThatCausedEmergency = {
             avatar: "Audience",
             name: "The Cat"
-        }), this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [e.playerThatCausedEmergency.avatar], this.update.infoText = `BLAME ${e.playerThatCausedEmergency.name}`, this.update.infoRole = "DID THIS"
+        }), this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [e.playerThatCausedEmergency.avatar], this.update.infoText = `BLAME ${e.playerThatCausedEmergency.name}`, this.update.infoRole = "A FAIT CA"
     }
     parseCancelerData(e) {
         const n = e.captain || {};
