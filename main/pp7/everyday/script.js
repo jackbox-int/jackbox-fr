@@ -24160,7 +24160,7 @@ const Jy = {
         }
     }),
     $D = `
-<p class="prompt">This Week's Challenge</p>
+<p class="prompt">Challenge de la semaine</p>
 <div class="stone-panel">
     <div class="grade"></div>
     <p class="title title-outline"></p>
@@ -24168,10 +24168,10 @@ const Jy = {
 </div>
 <div class="stone-buttons">
     <div class="button-wrapper">
-        <button class="stone-button prev"><span>previous<br/>episode</span></button>
+        <button class="stone-button prev"><span>précédant<br/>episode</span></button>
     </div>
     <div class="button-wrapper">
-        <button class="stone-button next"><span>next<br/>episode</span></button>
+        <button class="stone-button next"><span>prochain<br/>episode</span></button>
     </div>
 </div>
 `,
