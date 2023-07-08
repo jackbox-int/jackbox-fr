@@ -10736,28 +10736,28 @@ ${n.message}`,
         },
         CG = "LOADING",
         wG = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | {count} sur {maxPlayers} joueurs ont rejoint | {count} sur {maxPlayers} joueurs ont rejoint",
+            PLAYERS_NEEDED: "x | {count} joueur requis pour démarrer | {count} joueurs requis pour démarrer",
+            WAITING_FOR_VIP: "En attente de {name} pour démarrer la partie",
+            WAITING_FOR_GAMEPAD: "En attente du démarrage du jeu",
+            GAME_STARTING: "Le jeu commence",
+            BUTTON_START: "Appuyez pour commencer",
+            BUTTON_CANCEL: "Appuyez pour annuler"
         },
         $G = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Visitez la galerie",
+            PLAY_AGAIN: "Rejouer ?",
+            BUTTON_SAME_PLAYERS: "Mêmes joueurs",
+            BUTTON_NEW_PLAYERS: "Nouveaux joueurs"
         },
         OG = {
-            AND: "AND",
-            OR: "OR"
+            AND: "ET",
+            OR: "OU"
         },
         xG = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Passer",
+            BUTTON_NEXT: "Suivant",
+            BUTTON_DONE: "C\u2019est Parti !"
         },
         AG = {
             NAME: "AUDIENCE"
@@ -25352,86 +25352,86 @@ ${e}`
                 })
             })
         },
-        yae = "ASK",
+        yae = "DEMANDER",
         bae = "You have used a word The Wheel does not approve of. Please try again.",
-        Eae = "NO",
-        Sae = "OR",
-        Tae = "SEND",
-        Cae = "SUBMIT",
-        wae = "WAIT TO TRY AGAIN",
-        $ae = "UNDO",
-        Oae = "YES",
+        Eae = "NON",
+        Sae = "OU",
+        Tae = "ENVOYER",
+        Cae = "ENVOYER",
+        wae = "ATTENDEZ POUR REESSAYER",
+        $ae = "ANNULER",
+        Oae = "OUI",
         xae = {
             NAME: "THE AUDIENCE",
             VOTE_NOW: "VOTE NOW",
             THANKS: ["Thank you, dear audience.", "Every vote counts. Even yours!", "I thank you with all my enormity.", "I bestow upon you my deepest gratitude.", "Many thanks. I won't forget this."]
         },
         Aae = {
-            BANNER: "WHAT AM I THINKING?",
-            INCORRECT: "TRY AGAIN",
-            CORRECT: "GOT IT",
-            PLACEHOLDER: "Enter A Guess"
+            BANNER: "A QUOI JE PENSE ?",
+            INCORRECT: "REESSAYEZ",
+            CORRECT: "VOUS L'AVEZ",
+            PLACEHOLDER: "Entrez une réponse"
         },
         Lae = {
-            BANNER: "COUNTERPARTS",
-            CORRECT: "MATCH",
+            BANNER: "CONTREPARTIE",
+            CORRECT: "PARFAIT",
             FROZEN: "INCORRECT"
         },
         Iae = {
-            BANNER: "ENUMERATE"
+            BANNER: "VEUILLEZ ENUMERER"
         },
         Mae = {
-            PLACE: "PLACE YOUR SLICES",
-            SUBMIT: "DONE! PRESS SUBMIT",
-            THANKS: "NICE JOB"
+            PLACE: "PLACEZ VOS TRANCHES",
+            SUBMIT: "PARFAIT ! APPUYEZ SUR ENVOYER",
+            THANKS: "BEAU TRAVAIL"
         },
         Pae = {
-            BANNER: "WELCOME",
-            PLACEHOLDER: "Enter A Question"
+            BANNER: "BIENVENUE",
+            PLACEHOLDER: "Entrez une question"
         },
         Rae = {
-            BANNER: "THAT [small]OR[/small] THIS",
+            BANNER: "CECI [small]OU[/small] CELA",
             CORRECT: "CORRECT",
             FROZEN: "INCORRECT"
         },
         Nae = {
-            ANSWER_BANNER: "YOU WIN!",
-            MAIN_BANNER: "SPIN [small]THE[/small] WHEEL",
-            RAINBOW_BANNER: "RAINBOW WHEEL",
-            WIN_BANNER: "FOR [small]THE[/small] WIN"
+            ANSWER_BANNER: "VOUS ÊTES LE GAGNANT!",
+            MAIN_BANNER: "TOURNEZ [small]LA[/small] ROUE",
+            RAINBOW_BANNER: "ROUE ARC-EN-CIEL",
+            WIN_BANNER: "POUR [small]LA[/small] GLOIRE"
         },
         kae = {
-            OBJECTIVE_BANNER: "DON'T FORGET TO WRITE",
-            SUBJECTIVE_BANNER: "SUBJECTIVELY YOURS",
-            CORRECT: "GOOD",
-            TAKEN: "ANSWERED",
-            OBJECTIVE_INCORRECT: "WRONG",
-            SUBJECTIVE_INCORRECT: "NOPE",
-            PLACEHOLDER: "Enter A Guess"
+            OBJECTIVE_BANNER: "N'OUBLIEZ PAS D'ECRIRE",
+            SUBJECTIVE_BANNER: "Subjectivement vôtre",
+            CORRECT: "BIEN",
+            TAKEN: "BIEN REPONDU",
+            OBJECTIVE_INCORRECT: "MAUVAIS",
+            SUBJECTIVE_INCORRECT: "C'EST NON",
+            PLACEHOLDER: "Entrez une réponse"
         },
         Dae = {
-            SPIN: '[player avatar="{avatar}"]{name}[/player] is the spinner',
-            MESSAGES: ["Remember... patience is a virtue.", "This is a blank screen. Or is it?", "Action awaits!", "Oh, the waiting. The waiting!", "Just wait till the next part!", "Hey, nice controller! Sorry, just making conversation.", "(Insert on-hold music here)", "Sit tight, little meeple.", "I believe in you. Shhh... don't tell anyone.", "It's about to get exciting in here.", "Nothing to see here.", "Behold... a screen with only these words on it.", "Property of the Wheel of Enormous Proportions", "The Wheel Was Here"]
+            SPIN: '[player avatar="{avatar}"]{name}[/player] est en train de tourner la roue',
+            MESSAGES: ["Rappelez-vous, la patience est une vertue", "C'est un écran blanc... Quoi que...", "Je veux de l'action !", "Vive l'attente", "Attendez la prochaine partie du jeu", "Hey, joli téléphone ! Oh désolé, je voulais juste commencer une conversation.", "(Insérer une musique d'ascenseur ici)", "Asseyez-vous, petit meeple", "Je crois en toi. Chuttt... Ne le dis à personne.", "Ca commence à devenir intéressant.", "Rien à voir ici.", "Voici devant vous... Un écran avec ces mots dessus.", "Propriété de the Wheel of Enormous Proportions", "La roue est passée par là"]
         },
         Bae = {
-            ANSWER: "answer slice.",
-            AUDIENCE: "audience slice.",
-            BAD: "skull slice.",
-            BONUS: "power slice for {for}.",
-            EMPTY: "empty.",
-            MULTIPLIER: "empty {multiplier}x multiplier.",
-            NEIGHBOR: "neighbor slice.",
-            PLAYER: "player slice for {for}.",
-            POINTS: "{points} point slice.",
-            POINTS_FOR: "points slice for {for}.",
-            RESERVED: "reserved for {for}.",
-            WINNER: "winner slice for {for}.",
-            KEEP_GOING: "keep going.",
-            SPIN_POWER: "{power} percent power spin.",
-            SPIN: "swipe down or tap quickly to spin",
-            SLICE_COUNT: "you have 0 slices. | you have 1 slice. | you have {count} slices.",
-            YOU_CAN_WIN: "You now have enough points to win.",
-            YOUR_AVATAR: "Your avatar is",
+            ANSWER: "tranche de réponse.",
+            AUDIENCE: "tranche de l'audience.",
+            BAD: "tranche squelette.",
+            BONUS: "tranche de pouvoir pour {for}.",
+            EMPTY: "vide.",
+            MULTIPLIER: "multiplicateur {multiplier}x vide.",
+            NEIGHBOR: "tranche voisine.",
+            PLAYER: "tranche de joueur pour {for}.",
+            POINTS: "tranche à {points} points.",
+            POINTS_FOR: "points pour {for}.",
+            RESERVED: "réservé pour {for}.",
+            WINNER: "tranche gagnante pour {for}.",
+            KEEP_GOING: "continuez.",
+            SPIN_POWER: "Le tourné jaugé est à {power} pourcents.",
+            SPIN: "tournez ou tapez rapidement pour tourner",
+            SLICE_COUNT: "Vous avez 0 tranches. | Vous avez 1 tranche. | Vous avez {count} tranches.",
+            YOU_CAN_WIN: "Vous avez assez de points pour gagner.",
+            YOUR_AVATAR: "Votre avatar est",
             PLAYER1: "the royal",
             PLAYER2: "the knight",
             PLAYER3: "the mummy",
