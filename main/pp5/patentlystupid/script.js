@@ -21124,7 +21124,7 @@ const Fx = Ct.View.extend({
     Wx = Hn.extend({
         defaults: Ke.extend({}, ro.prototype.model.defaults, {
             strings: {
-                wait: "<div>PLEASE STAND BY!</div><div>The seminar will start shortly!</div>",
+                wait: "<div>BIENVENUE AU SEMINAIRE !</div><div>Nous allons commencer très bientôt !</div>",
                 vip_waiting: "<div>Vous êtes le VIP !</div><div>En attente des participants pour commencer !<div>",
                 vip_canStart: "<div>Vous êtes le VIP !</div><div>Appuyez sur ce bouton quand tous les participants sont prêts</div>",
                 vip_cancel: "<div>Vous êtes le VIP !</div><div>Appuyez sur ce bouton pour annuler le séminaire</div>",
