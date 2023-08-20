@@ -21249,7 +21249,7 @@ const zx = lc.extend({
                 le("#fakinit-lobby-text").html("Asseyez-vous et détendez-vous !"), this.showScreen(".state-lobby");
                 return
             }
-            f === "WaitingForMore" ? le("#fakinit-lobby-text").html("Waiting for all players to join") : f === "CanStart" ? (le("#fakinit-lobby-text").html("Press this button when everybody has joined"), le("#fakinit-startgame").show()) : f === "Countdown" || f === "PostGameCountdown" ? (le("#fakinit-lobby-text").html("Press this button to cancel game start"), le("#fakinit-stopcountdown").show()) : f === "PostGame" ? (le("#fakinit-lobby-text").html("What do you want to do?"), le(".fakinit-endbuttons").show()) : le("#fakinit-lobby-text").html("<br />Sit tight!<br>Waiting for the VIP to start")
+            f === "WaitingForMore" ? le("#fakinit-lobby-text").html("En attente de tous les joueurs pour commencer") : f === "CanStart" ? (le("#fakinit-lobby-text").html("Appuyez sur ce bouton quand tout le monde est présent"), le("#fakinit-startgame").show()) : f === "Countdown" || f === "PostGameCountdown" ? (le("#fakinit-lobby-text").html("Appuyez sur ce bouton pour annuler"), le("#fakinit-stopcountdown").show()) : f === "PostGame" ? (le("#fakinit-lobby-text").html("Que voulez-vous faire ?"), le(".fakinit-endbuttons").show()) : le("#fakinit-lobby-text").html("<br />En attente du VIP pour commencer")
         } else if (i === "Gameplay_EndGame") this.showScreen(".state-nothing");
         else if (i === "Logo") this.setCategory(e.category), this.showScreen(".state-nothing");
         else if (i === "Instructions") n && n.split("_")[1] === "Skip" ? this.showScreen(".state-skip-instructions") : this.showScreen(".state-nothing");
@@ -21260,7 +21260,7 @@ const zx = lc.extend({
                     for (a = 0; a < t.categories.length; a++) f += `<button class='fakinit-category-button fakinit-button btn btn-block button-send cat-${a}' data-params='${t.categories[a].type}'>${t.categories[a].name}</button>`;
                     le("#fakinit-category-form").html(f), le(".fakinit-category-flavor").html(this.categoryFlavor[Math.floor(Math.random() * this.categoryFlavor.length)]), this.showScreen(".state-categories")
                 }
-            } else le("#notchoosing").html(`${e.choosingPlayerName} is picking a category`), this.showScreen(".state-notchoosing");
+            } else le("#notchoosing").html(`${e.choosingPlayerName} choisit une catégorie`), this.showScreen(".state-notchoosing");
         else if (i && i.split("_")[0] === "Gameplay") {
             const f = n.split("_")[1];
             f === "Input" && (e.category = "Text You Up"), this.setCategory(e.category), le(".fakinit-task").html(t.task), le(".fakinit-gameplay-sign").hide(), f === "Ready" ? (this.showScreen(".state-gameplay"), le(".fakinit-gameplay-ready").show()) : f === "Yield" ? this.showScreen(".state-gameplay") : f === "Go" ? (this.showScreen(".state-gameplay"), le(".fakinit-gameplay-go").show()) : f === "Stop" ? (this.showScreen(".state-gameplay"), le(".fakinit-gameplay-stop").show()) : f === "Input" ? (this.showScreen(".state-gameplay"), le(".fakinit-gameplay-input").show(), le("#enteredText").focus(), le("#enteredText").val("")) : f === "Waiting" ? this.showScreen(".state-nothing") : this.showScreen(".state-nothing")
@@ -21294,7 +21294,7 @@ const zx = lc.extend({
             e = t ? t.state : "";
         switch (t.state === "Gameplay_Input" && (t.category = "Text You Up"), this.setCategory(t.category), e) {
             case "Lobby":
-                this.hideLobbyButtons(), le("#fakinit-lobby-text").html("Sit tight!<br>Waiting for the VIP to start"), this.showScreen(".state-lobby");
+                this.hideLobbyButtons(), le("#fakinit-lobby-text").html("En attente du VIP pour commencer"), this.showScreen(".state-lobby");
                 break;
             case "Gameplay_Logo":
             case "Ready":
@@ -21302,7 +21302,7 @@ const zx = lc.extend({
                 this.showScreen(".state-nothing");
                 break;
             case "Gameplay_CategorySelection":
-                le("#notchoosing").html(`${t.choosingPlayerName} is picking a category`), this.showScreen(".state-notchoosing");
+                le("#notchoosing").html(`${t.choosingPlayerName} choisit une catégorie`), this.showScreen(".state-notchoosing");
                 break;
             case "Gameplay":
             case "Gameplay_Go":
@@ -21310,7 +21310,7 @@ const zx = lc.extend({
                 le(".fakinit-category").html(t.category), le(".fakinit-task").html(t.task), le(".fakinit-gameplay-sign").hide(), this.showScreen(".state-gameplay");
                 break;
             case "Gameplay_Input":
-                t.category = "Text You Up", le(".fakinit-category").html(t.category), le(".fakinit-task").html("Sit Tight!<br>Players are answering"), le(".fakinit-gameplay-sign").hide(), this.showScreen(".state-gameplay");
+                t.category = "Text You Up", le(".fakinit-category").html(t.category), le(".fakinit-task").html("Les joueurs sont en train de répondre"), le(".fakinit-gameplay-sign").hide(), this.showScreen(".state-gameplay");
                 break;
             case "Vote": {
                 le("#vote-text").html(t.task);
@@ -21363,7 +21363,7 @@ const zx = lc.extend({
     sendInput() {
         const t = this.sanitize(le("#enteredText").val()).toUpperCase(),
             e = le("#fakinit-submit-alert");
-        return e.hide(), t.length === 0 ? (e.html("You can't enter nothing!"), e.show(), !1) : (this.client.send("SendMessageToRoomOwner", {
+        return e.hide(), t.length === 0 ? (e.html("Il faut entrer quelque chose"), e.show(), !1) : (this.client.send("SendMessageToRoomOwner", {
             answer: !0,
             msg: t
         }), !1)
@@ -21396,7 +21396,7 @@ const zx = lc.extend({
         let t = le("#fakinitNameChange").val().toUpperCase();
         return t = t.substring(0, 12), t.length > 0 ? (le("#player-name").html(t), this.client.send("SendMessageToRoomOwner", {
             name: t
-        }), le(".fakinit-name-change-form").hide(), le(".fakinit-name-change-button").show()) : alert("You have to enter something!"), !1
+        }), le(".fakinit-name-change-form").hide(), le(".fakinit-name-change-button").show()) : alert("Vous devez entrer quelque chose !"), !1
     },
     newGameSamePlayers() {
         return this.client.send("SendMessageToRoomOwner", {
