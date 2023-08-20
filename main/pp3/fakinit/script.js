@@ -16882,26 +16882,26 @@ const lc = Et.View.extend({
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
+                wait: "Asseyez-vous et détendez-vous !",
+                vip_waiting: "En attente des autres joueurs pour commencer",
+                vip_canStart: "Appuyez sur ce bouton quand tout le monde est présent",
+                vip_cancel: "Appuyez sur ce bouton pour annuler le lancement du jeu",
+                vip_postgame: "Que voulez-vous faire maintenant ?",
                 vip_episodes_menu: "Episodes Menu",
                 vip_episodes_unload: "Unload Episode",
                 vip_episodes_report: "Report Episode",
                 vip_episodes_warning: "Warning: user generated content is not rated",
                 vip_episodes_load: "Load an episode by id:",
                 vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
+                vip_episodes_back: "Retour",
+                vip_episodes_submit: "ENVOYER",
                 vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
+                button_start: "Tout le monde est là",
+                button_cancel: "Annuler",
+                button_changename: "Changer de nom",
+                button_sameplayers: "Mêmes joueurs",
+                button_newplayers: "Nouveaux joueurs",
+                prompt_entername: "Entrez votre nom",
                 prompt_choosecharacter: "Select your character",
                 button_censorOptions: "Censor Options",
                 censor_prompt: ""
@@ -21041,24 +21041,24 @@ const $x = Et.View.extend({
                     <div class="fakinit-change-name-dialog">\r
                         <form class="fakinit-name-change-form" style="display:none;">\r
                             <div class="form-group">\r
-                                <input type="input" class="form-control fakinit-input" id="fakinitNameChange" placeholder="name" maxLength=12>\r
+                                <input type="input" class="form-control fakinit-input" id="fakinitNameChange" placeholder="nom" maxLength=12>\r
                             </div>\r
                             <div class="row">\r
                                 <div class="col-xs-12">\r
-                                    <button id="fakinit-name-change-confirm" type="submit" class="fakinit-button fakinit-button-secondary pull-right">Submit</button>\r
-                                    <button id="fakinit-name-change-cancel" class="fakinit-button fakinit-button-secondary pull-right">Cancel</button>\r
+                                    <button id="fakinit-name-change-confirm" type="submit" class="fakinit-button fakinit-button-secondary pull-right">Envoyer</button>\r
+                                    <button id="fakinit-name-change-cancel" class="fakinit-button fakinit-button-secondary pull-right">Annuler</button>\r
                                 </div>\r
                             </div>\r
                         </form>\r
-                        <p class="fakinit-name-change-button"><button id="fakinit-name-change" class="fakinit-button fakinit-button-secondary">Change name?</button></p>\r
-                        <p><span class="fakinit-text fakinit-text-instruction fakinit-category-color">We recommend using your own name so people can easily identify you</span></p>\r
+                        <p class="fakinit-name-change-button"><button id="fakinit-name-change" class="fakinit-button fakinit-button-secondary">Changer de nom</button></p>\r
+                        <p><span class="fakinit-text fakinit-text-instruction fakinit-category-color">Nous vous recommendons d'utiliser votre vrai nom pour que tout le monde puisse vous reconnaitre facilement</span></p>\r
                     </div>\r
                     <form class="pure-form">\r
-                        <button type="button" id="fakinit-startgame" class="fakinit-button btn btn-lg btn-block">EVERYBODY'S IN</button>\r
-                        <button type="button" id="fakinit-stopcountdown" class="fakinit-button btn btn-lg btn-block">CANCEL</button>\r
+                        <button type="button" id="fakinit-startgame" class="fakinit-button btn btn-lg btn-block">TOUT LE MONDE EST LA</button>\r
+                        <button type="button" id="fakinit-stopcountdown" class="fakinit-button btn btn-lg btn-block">ANNULER</button>\r
                         <div style="margin-top:50px;"><p><span id="fakinit-lobby-text" class="fakinit-text fakinit-text-instruction fakinit-category-color"></span></p></div>\r
-                        <button type="button" id="fakinit-sameplayers" class="fakinit-button btn btn-lg btn-block fakinit-endbuttons">SAME PLAYERS</button>\r
-                        <button type="button" id="fakinit-newplayers" class="fakinit-button btn btn-lg btn-block fakinit-endbuttons">NEW PLAYERS</button>   \r
+                        <button type="button" id="fakinit-sameplayers" class="fakinit-button btn btn-lg btn-block fakinit-endbuttons">MÊMES JOUEURS</button>\r
+                        <button type="button" id="fakinit-newplayers" class="fakinit-button btn btn-lg btn-block fakinit-endbuttons">NOUVEAUX JOUEURS</button>   \r
                     </form>\r
 \r
                     <div class="pure-u-1"></div>\r
@@ -21084,8 +21084,8 @@ const $x = Et.View.extend({
                     </p>\r
                 </div>\r
                 <div class='container fakinit-gameplay-sign fakinit-gameplay-ready'>\r
-                    <p class="fakinit-text"><span id="press-instruction" class="fakinit-text-instruction">Press READY below when ready</span></p>\r
-                    <button class='fakinit-ready-button fakinit-button btn btn-lg btn-block button-send'>READY</button>\r
+                    <p class="fakinit-text"><span id="press-instruction" class="fakinit-text-instruction">Appuyez sur PRÊT quand vous êtes prêt</span></p>\r
+                    <button class='fakinit-ready-button fakinit-button btn btn-lg btn-block button-send'>PRÊT</button>\r
                 </div>\r
                 \r
                 <div class='fakinit-gameplay-sign fakinit-gameplay-yield'>\r
@@ -21100,10 +21100,10 @@ const $x = Et.View.extend({
                     <div class="container">\r
                         <form class="form-inline">\r
                             <div class="form-group" id="fakinit-input-text">\r
-                                <input id='enteredText' value='' type='text' class='form-control fakinit-input input-lg' autocapitalize='off' autocorrect='off' autocomplete='off' maxlength='45' placeholder='enter text here'/>\r
+                                <input id='enteredText' value='' type='text' class='form-control fakinit-input input-lg' autocapitalize='off' autocorrect='off' autocomplete='off' maxlength='45' placeholder='entrez quelque chose ici'/>\r
                                 <span id="fakinit-submit-alert" class="help-block fakinit-text fakinit-text-instruction" style="color:white;"></span>\r
                             </div>\r
-                            <button id="input-send" type="submit" class='fakinit-button btn button-input'>SEND</button>\r
+                            <button id="input-send" type="submit" class='fakinit-button btn button-input'>ENVOYER</button>\r
                         </form>\r
                     </div>\r
                 </div>\r
@@ -21113,9 +21113,9 @@ const $x = Et.View.extend({
 \r
         <div class="state-skip-instructions pt-page-off fakinit-page">\r
             <!-- <div style="height:100%;display:flex;flex-direction:column;"> -->\r
-                <p><button class='fakinit-skip-button fakinit-button fakinit-button-secondary button-send'>SKIP</button></p>\r
+                <p><button class='fakinit-skip-button fakinit-button fakinit-button-secondary button-send'>PASSER</button></p>\r
                 <div class="fakinit-text fakinit-category-color">\r
-                    <p class="fakinit-text-instruction ">Press SKIP if everyone knows how to play</p>\r
+                    <p class="fakinit-text-instruction ">Appuyez sur PASSER si tout le monde sait comment jouer</p>\r
                 </div>\r
                 <div class="fakinit-logo-image"></div>\r
             <!-- </div> -->\r
@@ -21123,7 +21123,7 @@ const $x = Et.View.extend({
 \r
         <div class="state-categories pt-page-off fakinit-page">\r
             <div id="fakinit-instruction-box-categories" class="fakinit-instruction-box">\r
-                <p id="category-title" class="fakinit-title fakinit-category-color">PICK A CATEGORY</p>\r
+                <p id="category-title" class="fakinit-title fakinit-category-color">CHOISISSEZ UNE CATEGORIE</p>\r
                 <p><span id="category-text" class="fakinit-text fakinit-text-instruction fakinit-category-flavor">stuff stuff stuff stuff</span></p>\r
             </div>\r
             <div class="container">\r
@@ -21155,14 +21155,14 @@ const $x = Et.View.extend({
                 <p><span id='vote-text' class="fakinit-text fakinit-task fakinit-text-instruction">.fakinit-task</span></p>\r
             </div>\r
             <div id="fakinit-bar-vote" class="fakinit-bar fakinit-category-background-dark">\r
-                <span id="fakinit-title-vote" class="fakinit-title fakinit-text-instruction">Who's the Faker?</span>\r
+                <span id="fakinit-title-vote" class="fakinit-title fakinit-text-instruction">Qui est le faussaire ?</span>\r
             </div>\r
             <div class="container">\r
                 <div class="">\r
                     <form id="fakinit-vote-form" class="pure-form"></form>\r
                     <button id="fakinit-vote" class='fakinit-vote-lock fakinit-button fakinit-button-lock button-input'>\r
                     </button>\r
-                    <p id="fakinit-vote-lock" class="fakinit-vote-lock"><span id="vote-lock-instruction" class="fakinit-text fakinit-text-instruction">LOCK IN VOTE</span></p>\r
+                    <p id="fakinit-vote-lock" class="fakinit-vote-lock"><span id="vote-lock-instruction" class="fakinit-text fakinit-text-instruction">BLOQUER LE VOTE</span></p>\r
                 </div>\r
             </div>\r
         </div>\r
@@ -21173,15 +21173,15 @@ const $x = Et.View.extend({
                 <span id="vote-locked-text" class="fakinit-text fakinit-task fakinit-text-instruction">.fakinit-task</span>\r
             </div>\r
             <div id="fakinit-bar-vote-locked" class="fakinit-bar fakinit-category-background-dark">\r
-                <span id="fakinit-title-vote-locked" class="fakinit-title fakinit-text-instruction">Who's the Faker?</span>\r
+                <span id="fakinit-title-vote-locked" class="fakinit-title fakinit-text-instruction">Qui est le faussaire ?</span>\r
             </div>\r
             <div class="container">\r
                 <div>\r
                     <button id='fakinit-locked-player' disabled type='button' class='fakinit-vote-button fakinit-button playername btn btn-block button-send selected'>PLAYER</button>\r
                     <button id="fakinit-vote-locked" disabled class='fakinit-button fakinit-button-lock-invert button-input'>\r
                     </button>\r
-                    <p class="fakinit-text"><span id="vote-locked-instruction" class="fakinit-text fakinit-text-instruction">You've locked in your vote!</span></p>\r
-                    <p class="fakinit-text"><span id="vote-locked-waiting"class="fakinit-text fakinit-text-instruction">Waiting for other players</span></p>\r
+                    <p class="fakinit-text"><span id="vote-locked-instruction" class="fakinit-text fakinit-text-instruction">Vous avez bloquer votre vote !</span></p>\r
+                    <p class="fakinit-text"><span id="vote-locked-waiting"class="fakinit-text fakinit-text-instruction">En attente des autres joueurs</span></p>\r
                 </div>\r
             </div>\r
         </div>\r
@@ -21194,7 +21194,7 @@ const zx = lc.extend({
     prevRoomState: "",
     prevPlayerState: "",
     doneAnswering: !1,
-    categoryFlavor: ["it's fun", "do it", "we believe in you", "it's easy", "don't make everyone wait", "this is the easy part", "pretty please?", "it's important", "you can do it", "you have the power", "choose wisely", "it's your time to shine", "quickly", "be smart about it", "enjoy it", "it's your turn", "it's your duty"],
+    categoryFlavor: ["C'est fun", "Faites-le", "On croit en vous", "C'est facile", "Ne faites pas attendre tout le monde", "C'est important", "Vous pouvez le faire", "Vous avez le pouvoir", "Choisissez bien"],
     events: {
         "click #fakinit-startgame": "startGame",
         "click #fakinit-stopcountdown": "stopCountdown",
@@ -21246,7 +21246,7 @@ const zx = lc.extend({
             this.hideLobbyButtons(), this.setCategory(null), this.showScreen(".state-lobby");
             const f = e.lobbyState;
             if (f !== "PostGame" && f !== "PostGameCountdown" && le(".fakinit-change-name-dialog").show(), !t.isAllowedToStartGame) {
-                le("#fakinit-lobby-text").html("Sit back and relax!"), this.showScreen(".state-lobby");
+                le("#fakinit-lobby-text").html("Asseyez-vous et détendez-vous !"), this.showScreen(".state-lobby");
                 return
             }
             f === "WaitingForMore" ? le("#fakinit-lobby-text").html("Waiting for all players to join") : f === "CanStart" ? (le("#fakinit-lobby-text").html("Press this button when everybody has joined"), le("#fakinit-startgame").show()) : f === "Countdown" || f === "PostGameCountdown" ? (le("#fakinit-lobby-text").html("Press this button to cancel game start"), le("#fakinit-stopcountdown").show()) : f === "PostGame" ? (le("#fakinit-lobby-text").html("What do you want to do?"), le(".fakinit-endbuttons").show()) : le("#fakinit-lobby-text").html("<br />Sit tight!<br>Waiting for the VIP to start")
