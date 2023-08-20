@@ -13163,7 +13163,7 @@ const gC = `<form>\r
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Envoyer</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -21025,7 +21025,7 @@ const Fx = Ct.View.extend({
     Hx = `<ul class="nav nav-colors">\r
     <li class="pull-left button-pad">\r
         <div class="undoButton">\r
-            <button id="undoButton" class="undo button block">Undo</button>\r
+            <button id="undoButton" class="undo button block">Annuler</button>\r
         </div>\r
     </li>\r
     <li class="pull-right button-pad"> \r
