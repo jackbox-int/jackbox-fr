@@ -31678,8 +31678,8 @@ ${e}`
                 t.component("Modal", ine), t.config.globalProperties.$hideModal = r, t.config.globalProperties.$showModal = n, t.config.globalProperties.$registerModal = i
             }
         };
-    Nn("");
-    const Yre = {
+    Ln("");
+    const ane = {
             LABEL: "BRANCH",
             REFRESH_REQUIRED: "Refresh Required",
             PREFERRED: "PREFERRED BRANCH",
@@ -31694,7 +31694,7 @@ ${e}`
             DESCRIPTION: "We use cookies to improve your game experience and analyze website traffic. Find out more in our [pp]Privacy Policy[/pp].",
             REJECT_ALL: "Opt out"
         },
-        Kre = {
+        lne = {
             UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
             ROOM_IS_FULL: "The game is full",
             ROOM_NOT_FOUND: "Room not found",
@@ -31708,7 +31708,7 @@ ${e}`
             GENERIC: "Error joining this game",
             FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
         },
-        Xre = {
+        cne = {
             NAME: "NAME",
             NAME_PLACEHOLDER: "ENTER YOUR NAME",
             PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
@@ -31719,8 +31719,8 @@ ${e}`
             ROOM_CODE: "ROOM CODE",
             ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
         },
-        Jre = "Link to Jackbox Games Homepage",
-        Qre = {
+        une = "Link to Jackbox Games Homepage",
+        fne = {
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
             HELP: "HELP",
@@ -31747,31 +31747,31 @@ de votre liste d'anciennes parties.`,
                 TITLE: "\xCAtes-vous s\xFBr\xA0?"
             }
         },
-        ene = {
+        pne = {
             EMPTY: "No Past Games Yet",
             MANAGE: "MANAGE",
             TITLE: "YOUR PAST GAMES"
         },
-        tne = {
+        hne = {
             TITLE: "RECENT GAMES",
             VIEW_ALL: {
                 BUTTON: "VOIR TOUT",
                 LINK: "VOIR TOUTES LES ANCIENNES PARTIES"
             }
         },
-        rne = {
+        mne = {
             GAME_FULL: "Game is full",
             GAME_STARTED: "Game has started",
             ROOM_NOT_FOUND: "Room not found"
         },
-        nne = {
+        gne = {
             GAME_FULL: "GAME IS FULL",
             GAME_STARTED: "GAME HAS STARTED",
             JOIN_AUDIENCE: "JOIN AUDIENCE",
             RECONNECT: "RECONNECT",
             TWITCH_LOGIN: "LOGIN WITH TWITCH"
         },
-        ine = {
+        vne = {
             CAMERA: "[b]HEADS UP:[/b] We’re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
             STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
             TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
@@ -31882,7 +31882,7 @@ de votre liste d'anciennes parties.`,
             RECONNECT: "SE RECONNECTER",
             TWITCH_LOGIN: "SE CONNECTER AVEC TWITCH"
         },
-        gne = {
+        Lne = {
             CAMERA: "[b]ATTENTION :[/b] Nous ne détectons aucune caméra, mais vous pouvez jouer sans afficher votre photo. Si vous pensez qu'il s'agit d'une erreur, essayez de rejoindre en utilisant un autre navigateur.",
             STYLE: "[b]ATTENTION :[/b] Votre navigateur semble obsolète. Vous risquez de rencontrer des problèmes d'affichage avec ce jeu.",
             TOS: "En cliquant sur {submit}, vous acceptez nos [tos]Conditions de service[/tos]."
