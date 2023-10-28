@@ -11917,13 +11917,13 @@ ${n.message}`,
         },
         r5 = "LOADING",
         i5 = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | {count} sur {maxPlayers} joueurs ont rejoint | {count} sur {maxPlayers} joueurs ont rejoint",
+            PLAYERS_NEEDED: "x | {count} joueurs requis pour commencer | {count} joueurs requis pour commencer",
+            WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
+            WAITING_FOR_GAMEPAD: "En attente du lancement du jeu",
+            GAME_STARTING: "Le jeu démarre",
+            BUTTON_START: "Appuyez pour commencer",
+            BUTTON_CANCEL: "Appuyez pour annuler"
         },
         s5 = {
             GALLERY_LINK: "Visit the Gallery",
@@ -11936,7 +11936,7 @@ ${n.message}`,
             OR: "OR"
         },
         o5 = {
-            BUTTON_SKIP: "Skip",
+            BUTTON_SKIP: "Passer",
             BUTTON_NEXT: "Next",
             BUTTON_DONE: "Let\u2019s Go!"
         },
@@ -31916,7 +31916,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             modelValue: e.names,
             "onUpdate:modelValue": t[2] || (t[2] = f => e.names = f),
             class: ke(!e.names.length && !e.draggingName ? "name-draggable name-empty" : "name-draggable"),
-            style: "--content: 'Name here'",
+            style: "--content: 'Nom ici'",
             group: {
                 name: "name",
                 put: !0,
@@ -31934,7 +31934,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             modelValue: e.stamps,
             "onUpdate:modelValue": t[3] || (t[3] = f => e.stamps = f),
             class: ke(!!e.names.length && !e.stamps.length && !e.draggingAvatar ? "stamp-draggable empty" : "stamp-draggable"),
-            style: "--content: 'Stamp here'",
+            style: "--content: 'Tampon ici'",
             group: {
                 name: "stamp",
                 put: ["avatars"],
@@ -32599,7 +32599,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, Ule, 12, Dle)])), e.isPlayer(e.player) && e.player.hasControls ? (J(), ie("div", Fle, [V("button", {
             class: "skip control",
             onClick: t[2] || (t[2] = (...c) => e.skip && e.skip(...c))
-        }, "Skip")])) : Re("", !0)])
+        }, "Passer")])) : Re("", !0)])
     }
     const Ble = St(Ele, [
             ["render", jle]
@@ -33070,10 +33070,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, 8, ["modelValue", "disabled"])])) : Re("", !0), V("div", oce, [V("button", {
             class: "shuffle control",
             onClick: t[14] || (t[14] = u => e.showShuffled ? e.showShuffled = !1 : e.shuffleStash())
-        }, $e(e.showShuffled ? "Show Original" : "Shuffle"), 1), V("button", {
+        }, $e(e.showShuffled ? "Montrer l'original" : "Mélanger"), 1), V("button", {
             class: "unshuffle control",
             onClick: t[15] || (t[15] = u => e.showSorted ? e.showSorted = !1 : e.sortStash())
-        }, $e(e.showSorted ? "Show Original" : "Sort"), 1)])], 6), Me(ki, {
+        }, $e(e.showSorted ? "Montrer l'original" : "Trier"), 1)])], 6), Me(ki, {
             name: "clipboard",
             appear: ""
         }, {
@@ -33131,12 +33131,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 }]),
                 disabled: e.hasEmptyBlank || e.submitted,
                 onClick: t[21] || (t[21] = Bt((...u) => e.onSubmit && e.onSubmit(...u), ["prevent"]))
-            }, " Submit ", 10, mce), e.hasEmptyBlank ? (J(), ie("button", {
+            }, " Envoyer ", 10, mce), e.hasEmptyBlank ? (J(), ie("button", {
                 key: 0,
                 disabled: !!e.answers[e.focusedIndex].length,
                 class: "start control",
                 onClick: t[22] || (t[22] = Bt((...u) => e.startForMe && e.startForMe(...u), ["prevent"]))
-            }, " Start for me ", 8, yce)) : Re("", !0)])], 512)], 2)]),
+            }, " Commencer pour moi ", 8, yce)) : Re("", !0)])], 512)], 2)]),
             _: 1
         })], 512)
     }
