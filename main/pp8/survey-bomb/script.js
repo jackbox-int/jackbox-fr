@@ -12765,10 +12765,10 @@ ${r.message}`,
         }
     }
     const PG = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
+            BACK: "Retour",
+            CANCEL: "Annuler",
+            CLOSE: "Fermer",
+            CONFIRM: "Confirmer",
             CREATE: "Create",
             DELETE: "Delete",
             DONE: "Done",
@@ -12779,7 +12779,7 @@ ${r.message}`,
             PUBLISH: "Publish",
             REMOVE: "Remove",
             RESET: "Reset",
-            SUBMIT: "Submit",
+            SUBMIT: "Envoyer",
             TRY_AGAIN: "Try Again",
             UNDO: "Undo",
             YES: "Yes"
@@ -27505,7 +27505,7 @@ ${t}`
         },
         Yne = {
             CHOOSE_ONE: "Choisissez une porte",
-            CHOOSE_THIS: "Choissez cette porte"
+            CHOOSE_THIS: "Choisir cette porte"
         },
         zne = {
             FILTER_ERROR: "Ce n\u2019est pas autorisé, entrez quelque chose d'autre !",
@@ -27547,7 +27547,7 @@ ${t}`
             SKIP_TUTORIALS: "Passer les tutoriels",
             UP_NEXT: {
                 HEADER: "Vous jouez juste après",
-                TEXT: ["Soyez pret ! C'est votre tour juste après.", "Soyez attentifs car vous choisissez la prochaine porte.", "Après ce choix, c'est votre tour... donc espérez qu'ils perdent ce tour"]
+                TEXT: ["Soyez prêt ! C'est votre tour juste après.", "Soyez attentifs car vous choisissez la prochaine porte.", "Après ce choix, c'est votre tour... donc espérez qu'ils perdent ce tour"]
             },
             WIN: {
                 HEADER: "Vous vous etes échappés",
