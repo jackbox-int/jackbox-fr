@@ -12804,13 +12804,13 @@ ${r.message}`,
         },
         MG = "LOADING",
         UG = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "{count} joueurs sur {maxPlayers} ont rejoint",
+            PLAYERS_NEEDED: "1 joueur requis pour commencer | {count} joueurs requis pour commencer",
+            WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
+            WAITING_FOR_GAMEPAD: "En attente du lancement du jeu",
+            GAME_STARTING: "Le jeu se lance",
+            BUTTON_START: "Appuyez pour commencer",
+            BUTTON_CANCEL: "Appuyez pour annuler"
         },
         FG = {
             GALLERY_LINK: "Visit the Gallery",
